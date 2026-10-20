@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="1344" viewBox="0 0 2160 1344"><rect width="2160" height="1344" fill="white"/>
+<rect x="33.6" y="31.360000000000003" width="2092.7999999999997" height="1281.2800000000002" rx="3" fill="white" stroke="#34465b" stroke-width="1.8"/>
+<text x="78" y="87.36000000000001" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#223246" font-weight="700" text-anchor="start">QUADRUPED ROBOT</text>
+<text x="78" y="120.96000000000001" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="400" text-anchor="start">Power distribution and control interconnect</text>
+<text x="2076" y="80.64000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="end">ELECTRICAL / SYSTEM WIRING</text>
+<text x="2076" y="112.00000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="700" text-anchor="end">REV B • BUILD DOCUMENTATION</text>
+<path d="M78,151.20000000000002 L2076,151.20000000000002" fill="none" stroke="#b9c4d1" stroke-width="1" stroke-linejoin="round"/>
+<text x="78" y="190.4" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">01  BATTERY &amp; ACTUATOR POWER</text>
+<rect x="84" y="229.60000000000002" width="246" height="156.8" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="102" y="258.72" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">BT1</text>
+<text x="102" y="291.20000000000005" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">Battery</text>
+<text x="102" y="319.20000000000005" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">8.4 V fully charged</text>
+<rect x="426" y="224.00000000000003" width="162" height="100.80000000000001" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="444" y="253.12000000000003" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">F1</text>
+<text x="444" y="285.6" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">Fuse</text>
+<text x="444" y="313.6" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">Inline protection</text>
+<rect x="684" y="224.00000000000003" width="180" height="100.80000000000001" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="702" y="253.12000000000003" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">SW1</text>
+<text x="702" y="285.6" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">Main switch</text>
+<rect x="996" y="224.00000000000003" width="252" height="100.80000000000001" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="1014" y="253.12000000000003" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">TB1</text>
+<text x="1014" y="285.6" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">Positive bus</text>
+<text x="1014" y="313.6" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">Battery-voltage rail</text>
+<rect x="1740" y="224.00000000000003" width="324" height="162.4" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="1758" y="253.12000000000003" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">M1–M12</text>
+<text x="1758" y="285.6" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">12 servo actuators</text>
+<text x="1758" y="313.6" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">Direct battery-bus supply</text>
+<path d="M330,263.20000000000005 L426,263.20000000000005" fill="none" stroke="#b42f38" stroke-width="3" stroke-linejoin="round"/>
+<path d="M588,263.20000000000005 L684,263.20000000000005" fill="none" stroke="#b42f38" stroke-width="3" stroke-linejoin="round"/>
+<path d="M864,263.20000000000005 L996,263.20000000000005" fill="none" stroke="#b42f38" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1248,263.20000000000005 L1740,263.20000000000005" fill="none" stroke="#b42f38" stroke-width="3" stroke-linejoin="round"/>
+<text x="1356" y="246.40000000000003" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#b42f38" font-weight="700" text-anchor="start">VBAT+ / up to 8.4 V</text>
+<circle cx="330" cy="263.20000000000005" r="4" fill="white" stroke="#b42f38" stroke-width="2"/>
+<text x="318" y="253.12000000000003" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#b42f38" font-weight="400" text-anchor="end">+</text>
+<circle cx="330" cy="347.20000000000005" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="318" y="337.12" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="end">−</text>
+<circle cx="1740" cy="263.20000000000005" r="4" fill="white" stroke="#b42f38" stroke-width="2"/>
+<text x="1728" y="253.12000000000003" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#b42f38" font-weight="400" text-anchor="end">PWR+</text>
+<circle cx="1740" cy="352.8" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="1752" y="342.72" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="start">GND</text>
+<path d="M330,347.20000000000005 L366,347.20000000000005 L366,968.8000000000001 L2004,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1740,352.8 L1434,352.8 L1434,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1434" cy="968.8000000000001" r="4.5" fill="#3c4856"/>
+<path d="M1308,263.20000000000005 L1308,397.6 L582,397.6 L582,509.6 L660,509.6" fill="none" stroke="#b42f38" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1308" cy="263.20000000000005" r="4.5" fill="#b42f38"/>
+<rect x="660" y="453.6" width="330" height="201.60000000000002" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="678" y="482.72" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">U1</text>
+<text x="678" y="515.2" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">Voltage converter</text>
+<text x="678" y="543.2" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">5 / 6 V selectable — set to 5 V</text>
+<text x="678" y="571.2" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">Regulated electronics supply</text>
+<circle cx="660" cy="509.6" r="4" fill="white" stroke="#b42f38" stroke-width="2"/>
+<text x="648" y="499.52000000000004" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#b42f38" font-weight="400" text-anchor="end">IN+</text>
+<circle cx="660" cy="616.0000000000001" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="672" y="605.9200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="start">IN−</text>
+<circle cx="990" cy="509.6" r="4" fill="white" stroke="#1467ae" stroke-width="2"/>
+<text x="978" y="499.52000000000004" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1467ae" font-weight="400" text-anchor="end">OUT+ 5 V</text>
+<circle cx="990" cy="616.0000000000001" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="978" y="605.9200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="end">OUT−</text>
+<path d="M660,616.0000000000001 L600,616.0000000000001 L600,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="600" cy="968.8000000000001" r="4.5" fill="#3c4856"/>
+<path d="M990,509.6 L1080,509.6 L1080,459.20000000000005 L2004,459.20000000000005" fill="none" stroke="#1467ae" stroke-width="3" stroke-linejoin="round"/>
+<text x="1500" y="442.40000000000003" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#1467ae" font-weight="700" text-anchor="start">BREADBOARD + RAIL / REGULATED 5 V</text>
+<rect x="1152" y="571.2" width="252" height="190.4" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="1170" y="600.32" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">U2</text>
+<text x="1170" y="632.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">Arduino Nano</text>
+<text x="1170" y="660.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">Embedded motion controller</text>
+<rect x="1482" y="571.2" width="252" height="190.4" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="1500" y="600.32" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">U3</text>
+<text x="1500" y="632.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">PCA9685</text>
+<text x="1500" y="660.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">PWM driver / logic supply</text>
+<rect x="1812" y="571.2" width="252" height="190.4" rx="3" fill="white" stroke="#63758a" stroke-width="1.8"/>
+<text x="1830" y="600.32" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">U4</text>
+<text x="1830" y="632.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#223246" font-weight="700" text-anchor="start">IMU breakout</text>
+<text x="1830" y="660.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">MPU6050 orientation sensor</text>
+<path d="M1200,459.20000000000005 L1200,571.2" fill="none" stroke="#1467ae" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1200" cy="459.20000000000005" r="4.5" fill="#1467ae"/>
+<circle cx="1200" cy="571.2" r="4" fill="white" stroke="#1467ae" stroke-width="2"/>
+<text x="1212" y="561.12" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1467ae" font-weight="400" text-anchor="start">5 V SUPPLY</text>
+<path d="M1530,459.20000000000005 L1530,571.2" fill="none" stroke="#1467ae" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1530" cy="459.20000000000005" r="4.5" fill="#1467ae"/>
+<circle cx="1530" cy="571.2" r="4" fill="white" stroke="#1467ae" stroke-width="2"/>
+<text x="1542" y="561.12" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1467ae" font-weight="400" text-anchor="start">VCC</text>
+<path d="M1860,459.20000000000005 L1860,571.2" fill="none" stroke="#1467ae" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1860" cy="459.20000000000005" r="4.5" fill="#1467ae"/>
+<circle cx="1860" cy="571.2" r="4" fill="white" stroke="#1467ae" stroke-width="2"/>
+<text x="1872" y="561.12" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#1467ae" font-weight="400" text-anchor="start">5 V SUPPLY</text>
+<path d="M1356,761.6 L1356,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1356" cy="968.8000000000001" r="4.5" fill="#3c4856"/>
+<circle cx="1356" cy="761.6" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="1368" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="start">GND</text>
+<path d="M1680,761.6 L1680,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1680" cy="968.8000000000001" r="4.5" fill="#3c4856"/>
+<circle cx="1680" cy="761.6" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="1692" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="start">GND</text>
+<path d="M2016,761.6 L2016,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="2016" cy="968.8000000000001" r="4.5" fill="#3c4856"/>
+<circle cx="2016" cy="761.6" r="4" fill="white" stroke="#3c4856" stroke-width="2"/>
+<text x="2028" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#3c4856" font-weight="400" text-anchor="start">GND</text>
+<path d="M990,616.0000000000001 L1056,616.0000000000001 L1056,968.8000000000001" fill="none" stroke="#3c4856" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1056" cy="968.8000000000001" r="4.5" fill="#3c4856"/>
+<text x="1074" y="946.4000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">Breadboard − rail</text>
+<text x="78" y="476.00000000000006" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">02  REGULATED ELECTRONICS</text>
+<text x="78" y="509.6" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#223246" font-weight="400" text-anchor="start">5 V breadboard supply:</text>
+<text x="78" y="536.48" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#223246" font-weight="400" text-anchor="start">Nano, PWM driver and IMU.</text>
+<text x="78" y="590.24" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#223246" font-weight="400" text-anchor="start">Logic and servo power</text>
+<text x="78" y="617.12" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#223246" font-weight="400" text-anchor="start">share a ground reference.</text>
+<path d="M1218,761.6 L1218,834.4000000000001 L1896,834.4000000000001 L1896,761.6" fill="none" stroke="#177f72" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1560,761.6 L1560,834.4000000000001" fill="none" stroke="#177f72" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1560" cy="834.4000000000001" r="4.5" fill="#177f72"/>
+<circle cx="1218" cy="761.6" r="4" fill="white" stroke="#177f72" stroke-width="2"/>
+<text x="1230" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#177f72" font-weight="400" text-anchor="start">SDA</text>
+<circle cx="1560" cy="761.6" r="4" fill="white" stroke="#177f72" stroke-width="2"/>
+<text x="1572" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#177f72" font-weight="400" text-anchor="start">SDA</text>
+<circle cx="1896" cy="761.6" r="4" fill="white" stroke="#177f72" stroke-width="2"/>
+<text x="1908" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#177f72" font-weight="400" text-anchor="start">SDA</text>
+<text x="1104" y="840.0000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#177f72" font-weight="700" text-anchor="end">SDA</text>
+<path d="M1260,761.6 L1260,884.8000000000001 L1938,884.8000000000001 L1938,761.6" fill="none" stroke="#7854a6" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1602,761.6 L1602,884.8000000000001" fill="none" stroke="#7854a6" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1602" cy="884.8000000000001" r="4.5" fill="#7854a6"/>
+<circle cx="1260" cy="761.6" r="4" fill="white" stroke="#7854a6" stroke-width="2"/>
+<text x="1272" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7854a6" font-weight="400" text-anchor="start">SCL</text>
+<circle cx="1602" cy="761.6" r="4" fill="white" stroke="#7854a6" stroke-width="2"/>
+<text x="1614" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7854a6" font-weight="400" text-anchor="start">SCL</text>
+<circle cx="1938" cy="761.6" r="4" fill="white" stroke="#7854a6" stroke-width="2"/>
+<text x="1950" y="751.5200000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7854a6" font-weight="400" text-anchor="start">SCL</text>
+<text x="1104" y="890.4000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#7854a6" font-weight="700" text-anchor="end">SCL</text>
+<text x="1158" y="806.4000000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#177f72" font-weight="700" text-anchor="start">I²C BUS / Two shared signal wires</text>
+<path d="M1734,632.8000000000001 L1770,632.8000000000001 L1770,532 L2088,532 L2088,408.8 L1980,408.8 L1980,386.40000000000003" fill="none" stroke="#177f72" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="1734" cy="632.8000000000001" r="4" fill="white" stroke="#177f72" stroke-width="2"/>
+<text x="1746" y="622.72" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#177f72" font-weight="400" text-anchor="start"></text>
+<circle cx="1980" cy="386.40000000000003" r="4" fill="white" stroke="#177f72" stroke-width="2"/>
+<text x="1968" y="376.32000000000005" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#177f72" font-weight="400" text-anchor="end">SIGNAL ×12</text>
+<text x="1800" y="518.5600000000001" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#177f72" font-weight="400" text-anchor="start">12 individual PWM lines</text>
+<text x="1500" y="683.2" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#177f72" font-weight="400" text-anchor="start">PWM outputs CH0–11</text>
+<text x="1500" y="720.1600000000001" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#223246" font-weight="400" text-anchor="start">Servo V+ terminal unused;</text>
+<text x="1500" y="741.44" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#223246" font-weight="400" text-anchor="start">power wired to TB1 instead.</text>
+<text x="396" y="996.8000000000001" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#3c4856" font-weight="700" text-anchor="start">TB2 / NEGATIVE POWER BUS — COMMON GROUND</text>
+<path d="M2004,968.8000000000001 L2004,993.44" fill="none" stroke="#3c4856" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1982.3999999999999,993.44 L2025.6,993.44" fill="none" stroke="#3c4856" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1989.6,1001.2800000000001 L2018.3999999999999,1001.2800000000001" fill="none" stroke="#3c4856" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1996.8,1009.1200000000001 L2011.1999999999998,1009.1200000000001" fill="none" stroke="#3c4856" stroke-width="2" stroke-linejoin="round"/>
+<path d="M78,1036 L2076,1036" fill="none" stroke="#b9c4d1" stroke-width="1" stroke-linejoin="round"/>
+<text x="78" y="1068.48" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#1467ae" font-weight="700" text-anchor="start">CONNECTION NOTES</text>
+<text x="78" y="1096.48" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">POWER: Battery positive passes through the fuse and main switch before feeding the positive bus and converter.</text>
+<text x="78" y="1122.24" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">GROUND: Battery negative, servo grounds, converter return and electronics grounds share the common reference.</text>
+<text x="78" y="1148" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">LOGIC: The converter is set to 5 V and supplies the Nano, PCA9685 VCC and IMU through the breadboard rail.</text>
+<text x="78" y="1173.7600000000002" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">CONTROL: SDA and SCL form the shared I²C bus; twelve separate PWM signal wires connect the PCA9685 to the servos.</text>
+<text x="78" y="1199.5200000000002" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">JUNCTIONS: Filled dots indicate electrical connections. Wire crossings without dots are not connected.</text>
+<rect x="78" y="1237.6000000000001" width="1998" height="52.64000000000001" rx="3" fill="#f1f5f9" stroke="#b9c4d1" stroke-width="1.8"/>
+<text x="96" y="1270.0800000000002" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="700" text-anchor="start">DESIGN: ETHAN VOELLMICKE</text>
+<text x="576" y="1270.0800000000002" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">DWG: QR-ELEC-001</text>
+<text x="960" y="1270.0800000000002" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#223246" font-weight="400" text-anchor="start">2026-10-20 | REV B</text>
+<text x="1344" y="1270.0800000000002" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#223246" font-weight="400" text-anchor="start">SYSTEM INTERCONNECT / NOT TO SCALE</text>
+</svg>
