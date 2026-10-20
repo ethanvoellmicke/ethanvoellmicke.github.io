@@ -1,7 +1,96 @@
 /* Edit project text and media here. See EDITING.md for examples. */
 window.PORTFOLIO_PROJECTS = [
  {id:"quadruped",number:"01",title:"12-DOF Quadruped Robot",category:"Robotics / embedded control",filters:["robotics","embedded"],summary:"A custom four-legged robot, from mechanical design to coordinated motion.",description:"An independently designed and built quadruped integrating custom mechanical hardware, twelve servo-driven joints, Arduino/C++ control, and ROS 2 visualization.",tags:["SOLIDWORKS","C++","Arduino","ROS 2","Inverse kinematics","IMU"],image:"https://raw.githubusercontent.com/ethanvoellmicke/quadruped-robot/main/QR-RobotCAD.png",imageCaption:"SOLIDWORKS assembly",repo:"https://github.com/ethanvoellmicke/quadruped-robot",video:null,photos:[],meta:"12 joints · Custom hardware · IMU feedback",overview:"I designed, manufactured, and programmed the robot to connect custom mechanical hardware with embedded motion control. The build combines servo-driven mechanisms, foot trajectories, analytical inverse kinematics, and roll/pitch feedback in one modular system.",contributions:["Designed the mechanical structure in SOLIDWORKS and manufactured custom 3D-printed components.","Integrated twelve servo-driven joints, power distribution, a PCA9685 PWM driver, and an MPU6050 IMU.","Developed foot trajectories, coordinated gait timing, individual servo calibration, and IMU-based body corrections.","Built related ROS 2 / RViz visualization and a serial / Wi-Fi command interface."],specs:[["Actuation","4 legs · 3 joints per leg"],["Controller","Arduino Nano / C++"],["Motion","Foot trajectories + planar hip/knee IK"],["Sensing","MPU6050 orientation feedback"],["Power","8.4 V battery · regulated 5 V electronics"],["Visualization","ROS 2 / RViz"]],process:[["Receive commands","Serial and Wi-Fi UDP commands select motion modes and update settings."],["Generate motion","A nominal 20 ms scheduler coordinates leg phases and desired foot trajectories."],["Adjust body posture","Feedforward shifts prepare leg liftoff; IMU measurements inform bounded roll and pitch corrections."],["Solve joint angles","Two-link analytical inverse kinematics converts planar foot targets to hip and knee angles. Shoulder control is handled separately."],["Drive calibrated servos","Per-servo neutral offsets, direction, limits, and linkage compensation translate joint requests into PCA9685 PWM outputs."]],technicalNote:"The supplied firmware includes stand, crawl, and trot modes. Roll and pitch feedback are disabled during trot in the supplied controller. Gait tuning and physical testing are ongoing; no measured terrain or speed claims are implied.",next:"Continue physical gait tuning and document stabilization response. An onboard camera and machine-learning-based perception are planned future work.",wiring:"assets/quadruped-wiring.svg"},
- {id:"robotic-arm",number:"02",title:"6-DOF Hand-Tracking Robotic Arm",category:"Robotics / computer vision",filters:["robotics","embedded"],summary:"Translating hand-tracking input into physical robotic arm motion.",description:"A servo-driven robotic arm connecting camera-based hand tracking, inverse kinematics, and Arduino actuation.",tags:["Python","OpenCV","MediaPipe","Arduino","Inverse kinematics"],image:"media/robotic-arm/arm-cad-cover.png",imageCaption:"CAD assembly of the 6-DOF hand-tracking robotic arm and gripper",repo:null,video:null,photos:[],meta:"6 DOF · Hand tracking · Serial control",art:"arm",overview:"This project connects hand tracking on a computer to a physical robotic arm. Python processes camera input, while an Arduino receives serial commands and controls the servo-driven mechanism.",contributions:["Built and integrated a robotic arm with a gripper.","Developed a Python hand-tracking interface using OpenCV and MediaPipe.","Sent target position and control data to an Arduino through serial communication.","Worked on inverse kinematics, coordinate mapping, and coordinated joint motion."],specs:[["Input","Camera-based hand tracking"],["Processing","Python · OpenCV · MediaPipe"],["Interface","Computer-to-Arduino serial"],["Actuation","Servo-driven arm and gripper"]],process:[["Track the hand","Camera input is processed on the computer using OpenCV and MediaPipe."],["Map the input","Hand-tracking data is mapped into target coordinates and control values."],["Send commands","Serial communication transfers the target data to the Arduino."],["Move the arm","Joint calculations and servo commands translate the target into physical motion."]],next:"Add the original source files, build photos, and a demonstration of the hand-tracking interface.",technicalNote:"Source files, detailed mechanical documentation, and demonstration footage will be added."},
+ {
+  "id": "robotic-arm",
+  "number": "02",
+  "title": "6-DOF Hand-Tracking Robotic Arm",
+  "category": "Robotics / computer vision",
+  "filters": [
+    "robotics",
+    "embedded"
+  ],
+  "summary": "Translating hand-tracking input into physical robotic arm motion.",
+  "description": "A servo-driven robotic arm connecting camera-based hand tracking, inverse kinematics, and Arduino actuation.",
+  "tags": [
+    "Python",
+    "OpenCV",
+    "MediaPipe",
+    "Arduino",
+    "Inverse kinematics"
+  ],
+  "image": "media/robotic-arm/arm-cad-cover.png",
+  "imageCaption": "CAD assembly of the 6-DOF hand-tracking robotic arm and gripper",
+  "repo": null,
+  "video": null,
+  "photos": [
+    {
+      "src": "media/robotic-arm/build-photo.jpg",
+      "caption": "Physical hand-tracking arm build with servo wiring, controller, and power supply."
+    }
+  ],
+  "meta": "6 DOF · Hand tracking · Serial control",
+  "art": "arm",
+  "overview": "This project connects hand tracking on a computer to a physical robotic arm. Python processes camera input, while an Arduino receives serial commands and controls the servo-driven mechanism.",
+  "contributions": [
+    "Built and integrated a robotic arm with a gripper.",
+    "Developed a Python hand-tracking interface using OpenCV and MediaPipe.",
+    "Sent target position and control data to an Arduino through serial communication.",
+    "Worked on inverse kinematics, coordinate mapping, and coordinated joint motion."
+  ],
+  "specs": [
+    [
+      "Input",
+      "Camera-based hand tracking"
+    ],
+    [
+      "Processing",
+      "Python · OpenCV · MediaPipe"
+    ],
+    [
+      "Interface",
+      "Computer-to-Arduino serial"
+    ],
+    [
+      "Actuation",
+      "Servo-driven arm and gripper"
+    ]
+  ],
+  "process": [
+    [
+      "Track the hand",
+      "Camera input is processed on the computer using OpenCV and MediaPipe."
+    ],
+    [
+      "Map the input",
+      "Hand-tracking data is mapped into target coordinates and control values."
+    ],
+    [
+      "Send commands",
+      "Serial communication transfers the target data to the Arduino."
+    ],
+    [
+      "Move the arm",
+      "Joint calculations and servo commands translate the target into physical motion."
+    ]
+  ],
+  "next": "Add the original Python and Arduino source files, joint calibration details, and control-interface documentation.",
+  "technicalNote": "The demonstration videos show overall arm motion and wrist-driven rotation, alongside the physical build photograph and CAD assembly. Python and Arduino source files and detailed calibration documentation will be added.",
+  "videos": [
+    {
+      "src": "media/robotic-arm/overall-movement.mp4",
+      "poster": "media/robotic-arm/overall-poster.jpg",
+      "title": "Overall movement",
+      "caption": "The arm responds to hand-tracking input across its range of motion."
+    },
+    {
+      "src": "media/robotic-arm/wrist-rotation.mp4",
+      "poster": "media/robotic-arm/wrist-poster.jpg",
+      "title": "Wrist rotation",
+      "caption": "Wrist rotation is mapped to the robotic arm’s rotational motion."
+    }
+  ]
+},
  {
   "id": "drone",
   "number": "03",

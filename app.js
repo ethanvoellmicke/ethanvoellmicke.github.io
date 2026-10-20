@@ -24,6 +24,7 @@ const dialog=$("#project-dialog"),lightbox=$("#image-dialog");
 let active=null,lastTrigger=null,zoom=1,lightboxTrigger=null;
 function tabsFor(p){return [{id:"overview",label:"Overview"},{id:"technical",label:"Engineering"},...(p.wiring?[{id:"wiring",label:"Electronics"}]:[]),{id:"media",label:"Photos & video"}];}
 function videoHTML(p){
+ if(p.videos?.length)return '<section class="video-section" aria-label="Hand-tracking demonstrations"><h3>See it in motion</h3><div class="video-grid">'+p.videos.map(v=>'<figure class="video-card"><video controls playsinline preload="metadata" aria-label="'+esc(v.title)+' demonstration"'+(v.poster?' poster="'+esc(safeURL(v.poster))+'"':'')+'><source src="'+esc(safeURL(v.src))+'" type="video/mp4">Your browser does not support inline video. <a href="'+esc(safeURL(v.src))+'">Open video</a></video><figcaption><h4>'+esc(v.title)+'</h4><p>'+esc(v.caption)+'</p></figcaption></figure>').join("")+'</div></section>';
  if(!p.video&&p.mediaIntro)return '<div class="media-note"><h3>'+esc(p.mediaHeading||"Project media")+'</h3><p>'+esc(p.mediaIntro)+'</p></div>';
  if(!p.video)return '<div class="media-note"><h3>See the build in action.</h3><p>Demonstration footage will be added here. '+(p.id==="quadruped"?'The CAD assembly and electrical schematic are available below.':'Build photos and source files will be added as the project documentation is expanded.')+'</p></div>';
  const url=safeURL(p.video);if(!url)return "";
@@ -72,7 +73,7 @@ function openProject(id,trigger){
  if(location.hash!=="#project="+id)history.pushState(null,"","#project="+id);
 }
 function closeProject(){if(dialog.open)dialog.close();}
-dialog.addEventListener("close",()=>{active=null;if(location.hash.startsWith("#project="))history.replaceState(null,"","#projects");lastTrigger?.focus();});
+dialog.addEventListener("close",()=>{document.querySelectorAll("#detail-panel video").forEach(v=>v.pause());active=null;if(location.hash.startsWith("#project="))history.replaceState(null,"","#projects");lastTrigger?.focus();});
 $("#close-project").addEventListener("click",closeProject);
 function setZoom(value){
  zoom=Math.max(1,Math.min(4,value));
@@ -88,6 +89,7 @@ lightbox.addEventListener("close",()=>lightboxTrigger?.focus());
 $("#zoom-in").addEventListener("click",()=>setZoom(zoom+.5));
 $("#zoom-out").addEventListener("click",()=>setZoom(zoom-.5));
 $("#reset-zoom").addEventListener("click",()=>{setZoom(1);$(".image-scroll").scrollTo(0,0);});
+document.addEventListener("play",e=>{if(e.target.tagName!=="VIDEO")return;document.querySelectorAll("#detail-panel video").forEach(v=>{if(v!==e.target)v.pause();});},true);
 document.addEventListener("click",e=>{
  const mode=e.target.closest("[data-plot-mode]");
  if(mode){

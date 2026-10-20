@@ -24,3 +24,6 @@
 .project-card[data-project="drone"] .card-art{background:#e5e4e1}
 .project-card[data-project="drone"] .card-art img{object-fit:contain;object-position:center}
 .design-figures{margin:32px 0}.design-figures .gallery{margin-top:16px!important}.design-figures .gallery figure:last-child:nth-child(odd){grid-column:1/-1}.design-figures .gallery figure:last-child:nth-child(odd) img{height:260px}.design-figures .gallery figcaption{line-height:1.65}
+
+/* Labeled, user-controlled arm demonstration players. */
+.video-section{margin:0 0 30px}.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.video-card{margin:0;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:white}.video-card video{display:block;width:100%;height:360px;object-fit:contain;background:#152525}.video-card figcaption{padding:17px 20px}.video-card h4{font-size:17px;letter-spacing:-.3px;font-weight:500;margin:0 0 7px}.video-card p{font-size:12px;line-height:1.65;margin:0}@media(max-width:650px){.video-grid{grid-template-columns:1fr}.video-card video{height:min(65vh,460px)}}
