@@ -10,3 +10,8 @@
 
 /* Mode-by-mode comparison of the two original arm traces. */
 .plot-mode-controls{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 22px}.plot-mode-controls button{background:transparent;border:1px solid var(--line);padding:10px 17px;border-radius:4px;font-size:12px}.plot-mode-controls button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:white}.plot-mode-controls button:hover{border-color:var(--green)}.tracking-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.tracking-grid .tracking-figure{margin:0;display:flex;flex-direction:column}.tracking-grid .plot-heading{padding:18px 20px 0}.plot-error{display:block;margin-top:10px;font-size:11px;color:var(--muted)}.plot-error strong{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;margin-left:6px}.tracking-grid .plot-image-button{padding:16px 10px}.tracking-grid figcaption{margin-top:auto;padding:16px 20px}.plot-mode-group[hidden]{display:none}@media(max-width:750px){.tracking-grid{grid-template-columns:1fr}.plot-mode-controls button{padding:10px 13px}.tracking-grid .plot-image-button{padding:12px 8px}}
+
+/* Preserve the complete portrait build photo on the I2C arm project. */
+.project-card[data-project="i2c-arm"] .card-art{background:#e5e9e3}
+.project-card[data-project="i2c-arm"] .card-art img{object-fit:contain;object-position:center;padding:5px}
+.detail-hero.detail-hero-portrait{object-fit:contain;background:var(--pale);max-height:500px}
