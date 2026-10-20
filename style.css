@@ -34,3 +34,16 @@
 /* Display the complete wide exploded CAD assembly on the Senior Design card. */
 .project-card[data-project="senior-design"] .card-art{background:#e9ecee}
 .project-card[data-project="senior-design"] .card-art img{object-fit:contain;object-position:center;padding:5px}
+
+/* Make the yearlong RTX Senior Design immediately visible in the Projects section. */
+.senior-spotlight{display:grid;grid-template-columns:minmax(0,1.32fr) minmax(270px,.88fr);margin:30px 0 4px;overflow:hidden;background:#e9eeeb;border:1px solid var(--line);border-radius:8px}
+.senior-spotlight-image{display:block;width:100%;min-height:280px;border:0;background:#eceef0;padding:18px;cursor:pointer}
+.senior-spotlight-image img{display:block;width:100%;height:100%;max-height:330px;object-fit:contain;object-position:center;transition:transform .25s}
+.senior-spotlight-image:hover img{transform:scale(1.025)}
+.senior-spotlight-copy{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:29px 34px}
+.senior-spotlight-copy .eyebrow{font-size:10px;letter-spacing:1.3px;color:var(--green)}
+.senior-spotlight-copy h3{font-size:32px;line-height:1.12;letter-spacing:-1px;font-weight:500;margin:17px 0 10px}
+.senior-spotlight-copy p{font-size:13px;color:var(--muted);line-height:1.65;margin:0 0 17px}
+.senior-spotlight-copy .tags{margin-bottom:18px}
+.senior-spotlight-copy .button{font-size:12px}
+@media(max-width:750px){.senior-spotlight{grid-template-columns:1fr;margin-top:22px}.senior-spotlight-image{min-height:205px;padding:14px}.senior-spotlight-image img{max-height:245px}.senior-spotlight-copy{padding:26px}.senior-spotlight-copy h3{font-size:28px}}
