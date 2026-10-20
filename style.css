@@ -15,3 +15,7 @@
 .project-card[data-project="i2c-arm"] .card-art{background:#e5e9e3}
 .project-card[data-project="i2c-arm"] .card-art img{object-fit:contain;object-position:center;padding:5px}
 .detail-hero.detail-hero-portrait{object-fit:contain;background:var(--pale);max-height:500px}
+
+/* Show the complete 6-DOF arm CAD assembly on its project cover. */
+.project-card[data-project="robotic-arm"] .card-art{background:#ebedeb}
+.project-card[data-project="robotic-arm"] .card-art img{object-fit:contain;object-position:center;padding:5px}
