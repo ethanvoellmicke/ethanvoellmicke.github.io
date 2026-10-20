@@ -19,3 +19,8 @@
 /* Show the complete 6-DOF arm CAD assembly on its project cover. */
 .project-card[data-project="robotic-arm"] .card-art{background:#ebedeb}
 .project-card[data-project="robotic-arm"] .card-art img{object-fit:contain;object-position:center;padding:5px}
+
+/* Keep the complete drone and payload mechanism visible. */
+.project-card[data-project="drone"] .card-art{background:#e5e4e1}
+.project-card[data-project="drone"] .card-art img{object-fit:contain;object-position:center}
+.design-figures{margin:32px 0}.design-figures .gallery{margin-top:16px!important}.design-figures .gallery figure:last-child:nth-child(odd){grid-column:1/-1}.design-figures .gallery figure:last-child:nth-child(odd) img{height:260px}.design-figures .gallery figcaption{line-height:1.65}
