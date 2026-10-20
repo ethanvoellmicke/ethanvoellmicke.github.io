@@ -30,3 +30,7 @@
 
 /* Competition recognition stays beside the project evidence. */
 .project-award{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;padding:22px 24px;margin:0 0 25px;background:var(--pale);border:1px solid var(--line);border-left:3px solid var(--green);border-radius:6px}.award-rank{font-size:30px;font-weight:500;letter-spacing:-1px;color:var(--green);white-space:nowrap}.project-award .eyebrow{font-size:8px;letter-spacing:1.3px}.project-award h3{font-size:18px;margin:5px 0 4px}.project-award p{font-size:11px;line-height:1.5;margin:0}.award-image-link{font-size:11px;font-weight:600;color:var(--green);padding:11px 0;border-bottom:1px solid var(--green);background:none;white-space:nowrap}@media(max-width:750px){.project-award{grid-template-columns:1fr;gap:12px;padding:20px}.award-rank{font-size:28px}.award-image-link{justify-self:start}}
+
+/* Display the complete wide exploded CAD assembly on the Senior Design card. */
+.project-card[data-project="senior-design"] .card-art{background:#e9ecee}
+.project-card[data-project="senior-design"] .card-art img{object-fit:contain;object-position:center;padding:5px}
