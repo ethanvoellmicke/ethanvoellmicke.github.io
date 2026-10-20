@@ -34,7 +34,10 @@ function galleryHTML(p){
 }
 function plotsHTML(p){
  if(!p.plots?.length)return "";
- return '<section class="tracking-plots" aria-label="Joint tracking plots"><h3>Tracking response</h3><p class="plot-intro">Reference and measured joint angles show how the controller responds as the target position changes.</p>'+p.plots.map((plot,i)=>'<figure class="tracking-figure"><div class="plot-heading"><span class="plot-index">TEST TRACE / '+String(i+1).padStart(2,"0")+'</span><h4>'+esc(plot.title)+'</h4></div><button class="plot-image-button" '+imgAttrs(plot.src,plot.title)+' aria-label="Enlarge '+esc(plot.title)+'"><img class="plot-image" src="'+esc(safeURL(plot.src))+'" alt="'+esc(plot.alt||plot.title)+'" loading="lazy"></button><figcaption>'+esc(plot.caption)+'<span class="plot-expand-hint">Select plot to enlarge ↗</span></figcaption></figure>').join("")+'</section>';
+ const modes=[...new Set(p.plots.map(plot=>plot.mode||"all"))];
+ const labels=Object.fromEntries(p.plots.map(plot=>[plot.mode||"all",plot.modeLabel||"Tracking"]));
+ const groups=modes.map((mode,index)=>'<div class="plot-mode-group" data-plot-group="'+esc(mode)+'"'+(index?' hidden':'')+'><div class="tracking-grid">'+p.plots.filter(plot=>(plot.mode||"all")===mode).map(plot=>'<figure class="tracking-figure"><div class="plot-heading"><span class="plot-index">'+esc(plot.modeLabel||"TRACKING RESPONSE")+'</span><h4>'+esc(plot.title)+'</h4><span class="plot-error">Reported avg. error <strong>'+esc(plot.error||"—")+'</strong></span></div><button class="plot-image-button" '+imgAttrs(plot.src,(plot.modeLabel||"Tracking")+" — "+plot.title)+' aria-label="Enlarge '+esc((plot.modeLabel||"Tracking")+" — "+plot.title)+'"><img class="plot-image" src="'+esc(safeURL(plot.src))+'" alt="'+esc(plot.alt||plot.title)+'" loading="lazy"></button><figcaption>'+esc(plot.caption)+'<span class="plot-expand-hint">Select plot to enlarge ↗</span></figcaption></figure>').join("")+'</div></div>').join("");
+ return '<section class="tracking-plots" aria-label="Joint tracking plots"><h3>Tracking response</h3><p class="plot-intro">Compare both arms across the three operating modes. Blue is the reference angle; red is the measured motor position.</p><div class="plot-mode-controls" role="group" aria-label="Choose plot operating mode">'+modes.map((mode,index)=>'<button type="button" data-plot-mode="'+esc(mode)+'" aria-pressed="'+(!index)+'">'+esc(labels[mode])+'</button>').join("")+'</div>'+groups+'</section>';
 }
 function resultsHTML(p){
  if(!p.results)return "";
@@ -81,6 +84,14 @@ $("#zoom-in").addEventListener("click",()=>setZoom(zoom+.5));
 $("#zoom-out").addEventListener("click",()=>setZoom(zoom-.5));
 $("#reset-zoom").addEventListener("click",()=>{setZoom(1);$(".image-scroll").scrollTo(0,0);});
 document.addEventListener("click",e=>{
+ const mode=e.target.closest("[data-plot-mode]");
+ if(mode){
+  const section=mode.closest(".tracking-plots");
+  section.querySelectorAll("[data-plot-mode]").forEach(button=>button.setAttribute("aria-pressed",String(button===mode)));
+  section.querySelectorAll("[data-plot-group]").forEach(group=>{group.hidden=group.dataset.plotGroup!==mode.dataset.plotMode;});
+  return;
+ }
+
  const project=e.target.closest("[data-project]");if(project){openProject(project.dataset.project,project);return;}
  const image=e.target.closest("[data-image]");if(image){openImage(image.dataset.image,image.dataset.caption||"Project image",image);return;}
  const tab=e.target.closest("[data-tab]");if(tab){selectTab(tab.dataset.tab);return;}
