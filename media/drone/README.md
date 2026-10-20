@@ -7,12 +7,13 @@ This portfolio section documents the team project. Ethan Voellmicke is listed as
 ## Media provenance
 
 - `drone-cover.webp`: supplied photograph of the physical build, with the classroom background replaced for presentation using the built-in image editor. The caption identifies the background edit.
+- `second-place-trophy.png`: supplied trophy photograph, unchanged. The inscription records 2nd place in the 2025 ASME IAM3D Competition at EFx SLU, April 25–26, 2025, St. Louis, Missouri.
 - `drone-cad.webp`: supplied CAD rendering, converted losslessly to WebP; decoded RGB pixels were checked against the source.
 - `optimized-chassis.png`: original embedded image from PDF page 50, final lightweight lower-chassis model.
 - `chassis-displacement.png`: original embedded image from PDF page 20, Figure 20. Original colors, geometry, scale, and labels are unchanged.
 - `payload-grabber.png`: original embedded image from PDF page 42, Figure 41.
 
-The full report is not included. Figures retain the original embedded image bytes. Dimensions are the CAD envelope reported on page 11. The 0.177 mm value is an FEA prediction for a simplified chassis; the grabber's reported 400+ cycles refer to bench testing of an earlier mechanism iteration. No measured flight speed, flight endurance, competition placing, or final integrated payload performance is claimed.
+The full report is not included. Figures retain the original embedded image bytes. Dimensions are the CAD envelope reported on page 11. The 0.177 mm value is an FEA prediction for a simplified chassis; the grabber's reported 400+ cycles refer to bench testing of an earlier mechanism iteration. The team’s second-place competition result is supported by the supplied trophy photograph and user confirmation. No measured flight speed, flight endurance, or final integrated payload performance is claimed.
 
 ## Cover editing prompt
 
