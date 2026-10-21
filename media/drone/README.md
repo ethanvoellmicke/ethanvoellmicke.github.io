@@ -18,3 +18,10 @@ The full report is not included. Figures retain the original embedded image byte
 ## Cover editing prompt
 
 Use case: precise-object-edit. Asset type: engineering portfolio project cover, landscape 3:2 photograph. Edit target: the supplied real drone build photograph. Replace only the busy classroom background and tabletop with a clean warm very light gray studio tabletop and matching neutral background with subtle realistic soft contact shadows. Reframe with the complete existing quadcopter and its white payload grabber visible, modest breathing space, and the original camera perspective. Preserve all four black circular propeller guards, black printed frame, translucent blue three-blade propellers and motors, wires, hardware, yellow smiley head with blue hair, and white grabber with its black strip. Retain the prototype's printing texture and component arrangement. Remove people, furniture, and classroom clutter. No labels, text, or watermarks.
+
+## Flight demonstration
+
+- `drone-working.mp4`: browser-friendly H.264/AAC copy of supplied `DroneWorking.mp4`, retaining the complete approximately 11-second clip and its audio. The video is resized to 1280 pixels wide and uses fast-start metadata. No footage has been cropped or trimmed.
+- `drone-working-poster.jpg`: still frame approximately three seconds into the clip.
+
+The player is labeled Drone in flight and shows onboard FPV footage through a gated course. Existing CAD, report figures, photographs, and second-place award are retained.

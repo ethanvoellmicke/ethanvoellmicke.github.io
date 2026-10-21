@@ -189,14 +189,22 @@ window.PORTFOLIO_PROJECTS = [
   ],
   "mediaHeading": "From CAD to hardware",
   "mediaIntro": "The physical build and CAD assembly show how the printed structure, electronics, propeller guards, and payload system come together. The trophy marks the team’s second-place finish at the 2025 ASME IAM3D Competition at EFx SLU. Select an image to enlarge it.",
-  "next": "Add flight footage and details of the final competition configuration.",
+  "next": "Add details of the final competition configuration and further flight-testing documentation.",
   "award": {
     "title": "2nd place",
     "event": "2025 ASME IAM3D Competition",
     "detail": "UMass Amherst ASME design team · EFx SLU · St. Louis, Missouri",
     "src": "media/drone/second-place-trophy.png",
     "caption": "Second-place trophy — 2025 ASME IAM3D Competition at EFx SLU, April 25–26, 2025, St. Louis, Missouri."
-  }
+  },
+  "videos": [
+    {
+      "src": "media/drone/drone-working.mp4",
+      "poster": "media/drone/drone-working-poster.jpg",
+      "title": "Drone in flight",
+      "caption": "Onboard FPV footage showing the drone flying through a gated course."
+    }
+  ]
 },
  {
   "id": "robotic-car",
