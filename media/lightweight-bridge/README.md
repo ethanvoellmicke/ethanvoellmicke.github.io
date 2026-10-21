@@ -5,7 +5,7 @@ Additive Manufacturing Processes final project: support a 20 lb central load for
 ## Outcome and measurement provenance
 Final bridge mass: 11.7 g, corrected directly by Ethan. This supersedes the inconsistent report mass entries. The portfolio does not attribute the corrected final mass to Table 1.
 The report supplies the $4.46 fabrication cost, 1 hour 53 minute print time and successful 20 lb load test. Earlier iteration masses/costs remain 52 g / $13.24, 17 g / $7.86, and 12.3 g / $5.92.
-The still-standing class record is an author-supplied claim. No separate support mass is inferred.
+The still-standing course record is an author-supplied claim. No separate support mass is inferred.
 
 ## Original figures
 Eleven embedded images were extracted from the supplied 618 Group 3 Final Report.pdf and converted to lossless WebP. Every decoded image was checked pixel-for-pixel against the extraction. No simulation legends, dimensions or curves were altered; no document text, author list or page chrome is embedded in the portfolio images.

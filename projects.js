@@ -182,8 +182,151 @@ window.PORTFOLIO_PROJECTS = [
     ]
   },
   {
-    "id": "drone",
+    "id": "senior-design",
     "number": "03",
+    "title": "RTX Senior Design — Pressure Relief System",
+    "category": "Senior capstone / sponsor: Raytheon (RTX)",
+    "filters": [
+      "mechanical"
+    ],
+    "summary": "Design lead for a modular, passive pressure-relief system engineered for the AN/TPY-2 radar enclosure.",
+    "description": "Yearlong UMass Amherst senior capstone, Team 1406: custom bidirectional pressure-relief valve, windbreaker, and removable hydrophobic filter developed for Raytheon/RTX.",
+    "tags": [
+      "SOLIDWORKS",
+      "Mechanical design",
+      "Engineering drawings",
+      "Fluid flow",
+      "Prototyping",
+      "Machining",
+      "RTX"
+    ],
+    "image": "media/senior-design/valve-exploded-cad.svg",
+    "imageCaption": "Exploded CAD assembly showing the valve, spring mechanism, removable filter housing and windbreaker",
+    "repo": "https://github.com/ethanvoellmicke/ethanvoellmicke.github.io/tree/main/media/senior-design",
+    "video": null,
+    "photos": [
+      {
+        "src": "media/senior-design/filter-housing-cutaway.svg",
+        "caption": "Transparent CAD view of the filter housing and removable cartridge in the modular assembly"
+      },
+      {
+        "src": "media/senior-design/valve-internal-cutaway.svg",
+        "caption": "Transparent CAD view of the spring-loaded, bidirectional pressure-relief valve internals"
+      },
+      {
+        "src": "media/senior-design/valve-assembly-render.svg",
+        "caption": "Physical valve assembly, CNC-machined and assembled by our team."
+      },
+      {
+        "src": "media/senior-design/showcase-poster.webp",
+        "caption": "UMass Amherst Team 1406 spring showcase poster covering the system, prototypes and test results"
+      },
+      {
+        "src": "media/senior-design/valve-engineering-drawings.jpg",
+        "caption": "Valve components and engineering drawings from the capstone design report"
+      },
+      {
+        "src": "media/senior-design/windbreaker-filter-drawings.jpg",
+        "caption": "Windbreaker and filter housing designs and engineering drawings from the capstone report"
+      },
+      {
+        "src": "media/senior-design/early-flow-simulation.png",
+        "caption": "SOLIDWORKS Flow Simulation on an early pressure-relief system model, used to explore airflow through the initial geometry."
+      }
+    ],
+    "mediaHeading": "CAD, manufactured hardware & drawings",
+    "mediaIntro": "Explore the exploded assembly and transparent CAD cutaways alongside a photograph of the physical valve assembly our team CNC-machined and built, plus the original component drawings and showcase poster. Select any image to enlarge.",
+    "meta": "Design Lead · RTX sponsor · SOLIDWORKS",
+    "overview": "As Design Lead for Team 1406, I developed and iterated the SOLIDWORKS models and engineering drawings for a passive pressure-relief system sponsored by Raytheon/RTX. The goal was to prevent damaging pressure differentials during aerial transport while maintaining weatherproofing. The concept integrates three serviceable stages: an external perforated windbreaker, a removable hydrophobic filtration module, and a spring-loaded bidirectional relief valve. Our team progressed from CAD iterations and 3D-printed fit checks to CNC machining, assembly, and performance evaluation of the physical valve prototype.",
+    "contributionHeading": "My work as Design Lead",
+    "contributions": [
+      "Created and iterated the full pressure-relief assembly and individual component designs in SOLIDWORKS, working through manufacturability and fitment constraints.",
+      "Prepared engineering drawings for the windbreaker, filter housing and spacers, funnel, valve body, support plates, shaft, and valve plates.",
+      "Worked closely with the fabrication lead to refine designs for available machining processes and assembly.",
+      "Performed early SOLIDWORKS flow-simulation work and researched relevant engineering requirements and standards.",
+      "Produced 3D-printed prototype components for design reviews and assisted with machining the final design.",
+      "Coordinated mechanical design decisions across the team as the prototype developed."
+    ],
+    "specs": [
+      [
+        "Project",
+        "UMass MIE 414 · Team 1406"
+      ],
+      [
+        "Sponsor",
+        "Raytheon Missiles & Defense (RTX)"
+      ],
+      [
+        "Role",
+        "Mechanical Design Lead"
+      ],
+      [
+        "Function",
+        "Passive two-way pressure equalization"
+      ],
+      [
+        "Architecture",
+        "Windbreaker · removable filter · valve"
+      ],
+      [
+        "Materials",
+        "6061 aluminum · prototype printed components"
+      ],
+      [
+        "Design software",
+        "SOLIDWORKS + early flow simulation"
+      ],
+      [
+        "Evaluation",
+        "Airflow · pressure differential · debris/water filtration"
+      ]
+    ],
+    "process": [
+      [
+        "Set design constraints",
+        "Fit within the existing access-panel geometry, require no power or operator action, and maintain weather and debris protection."
+      ],
+      [
+        "Generate valve concepts",
+        "Evaluate low-pressure high-flow options, including an initial butterfly concept and a bidirectional spring-loaded plate valve."
+      ],
+      [
+        "Design modular construction",
+        "Create a perforated windbreaker, serviceable hydrophobic filter cartridge, and spring-loaded valve assembly with separable machined components."
+      ],
+      [
+        "Detail parts for manufacturing",
+        "Refine tolerances and interfaces in SOLIDWORKS and prepare dimensioned drawings for each part and the assembled system."
+      ],
+      [
+        "Prototype and fabricate",
+        "Use 3D prints for fit and alignment checks, then CNC-machine and assemble the physical aluminum valve prototype with springs and gaskets."
+      ],
+      [
+        "Evaluate performance",
+        "Compare flow-rate and pressure-differential behavior with design targets and assess water/debris sealing; summarize results on the project poster."
+      ]
+    ],
+    "technicalNote": "The spring showcase poster reports a 0.055 psi modeled stacked pressure differential and documents component testing, including flow rates, spring configurations, and filter performance. The poster also notes improvement opportunities for drainage, gasket materials, and valve-seal tolerances. These are team-reported results, not a claim of independently certified compliance. Team members: Lucca Garcia, Aidan Hamblin, Ethan Gattoni, Ethan Voellmicke, and Katie Barberi.",
+    "next": "Expand documentation of prototype validation, sealing, and drainage improvements.",
+    "resources": [
+      {
+        "label": "Full showcase poster (image)",
+        "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/showcase-poster.webp"
+      },
+      {
+        "label": "Selected valve engineering drawings",
+        "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/valve-engineering-drawings.jpg"
+      },
+      {
+        "label": "Windbreaker and filter drawings",
+        "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/windbreaker-filter-drawings.jpg"
+      }
+    ]
+  },
+  {
+    "id": "drone",
+    "number": "04",
     "title": "IAM3D FPV Racing Drone",
     "category": "UMass ASME / competition design",
     "filters": [
@@ -298,7 +441,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     "id": "i2c-arm",
-    "number": "04",
+    "number": "05",
     "title": "Dual-Arduino I²C Robotic Arm",
     "category": "Mechatronics / embedded feedback control",
     "filters": [
@@ -485,149 +628,6 @@ window.PORTFOLIO_PROJECTS = [
       {
         "label": "Follower Arduino firmware",
         "url": "https://github.com/ethanvoellmicke/ethanvoellmicke.github.io/blob/main/media/i2c-arm/FinalProjectCodeFollower.ino"
-      }
-    ]
-  },
-  {
-    "id": "senior-design",
-    "number": "05",
-    "title": "RTX Senior Design — Pressure Relief System",
-    "category": "Senior capstone / sponsor: Raytheon (RTX)",
-    "filters": [
-      "mechanical"
-    ],
-    "summary": "Design lead for a modular, passive pressure-relief system engineered for the AN/TPY-2 radar enclosure.",
-    "description": "Yearlong UMass Amherst senior capstone, Team 1406: custom bidirectional pressure-relief valve, windbreaker, and removable hydrophobic filter developed for Raytheon/RTX.",
-    "tags": [
-      "SOLIDWORKS",
-      "Mechanical design",
-      "Engineering drawings",
-      "Fluid flow",
-      "Prototyping",
-      "Machining",
-      "RTX"
-    ],
-    "image": "media/senior-design/valve-exploded-cad.svg",
-    "imageCaption": "Exploded CAD assembly showing the valve, spring mechanism, removable filter housing and windbreaker",
-    "repo": "https://github.com/ethanvoellmicke/ethanvoellmicke.github.io/tree/main/media/senior-design",
-    "video": null,
-    "photos": [
-      {
-        "src": "media/senior-design/filter-housing-cutaway.svg",
-        "caption": "Transparent CAD view of the filter housing and removable cartridge in the modular assembly"
-      },
-      {
-        "src": "media/senior-design/valve-internal-cutaway.svg",
-        "caption": "Transparent CAD view of the spring-loaded, bidirectional pressure-relief valve internals"
-      },
-      {
-        "src": "media/senior-design/valve-assembly-render.svg",
-        "caption": "Physical valve assembly, CNC-machined and assembled by our team."
-      },
-      {
-        "src": "media/senior-design/showcase-poster.webp",
-        "caption": "UMass Amherst Team 1406 spring showcase poster covering the system, prototypes and test results"
-      },
-      {
-        "src": "media/senior-design/valve-engineering-drawings.jpg",
-        "caption": "Valve components and engineering drawings from the capstone design report"
-      },
-      {
-        "src": "media/senior-design/windbreaker-filter-drawings.jpg",
-        "caption": "Windbreaker and filter housing designs and engineering drawings from the capstone report"
-      },
-      {
-        "src": "media/senior-design/early-flow-simulation.png",
-        "caption": "SOLIDWORKS Flow Simulation on an early pressure-relief system model, used to explore airflow through the initial geometry."
-      }
-    ],
-    "mediaHeading": "CAD, manufactured hardware & drawings",
-    "mediaIntro": "Explore the exploded assembly and transparent CAD cutaways alongside a photograph of the physical valve assembly our team CNC-machined and built, plus the original component drawings and showcase poster. Select any image to enlarge.",
-    "meta": "Design Lead · RTX sponsor · SOLIDWORKS",
-    "overview": "As Design Lead for Team 1406, I developed and iterated the SOLIDWORKS models and engineering drawings for a passive pressure-relief system sponsored by Raytheon/RTX. The goal was to prevent damaging pressure differentials during aerial transport while maintaining weatherproofing. The concept integrates three serviceable stages: an external perforated windbreaker, a removable hydrophobic filtration module, and a spring-loaded bidirectional relief valve. Our team progressed from CAD iterations and 3D-printed fit checks to CNC machining, assembly, and performance evaluation of the physical valve prototype.",
-    "contributionHeading": "My work as Design Lead",
-    "contributions": [
-      "Created and iterated the full pressure-relief assembly and individual component designs in SOLIDWORKS, working through manufacturability and fitment constraints.",
-      "Prepared engineering drawings for the windbreaker, filter housing and spacers, funnel, valve body, support plates, shaft, and valve plates.",
-      "Worked closely with the fabrication lead to refine designs for available machining processes and assembly.",
-      "Performed early SOLIDWORKS flow-simulation work and researched relevant engineering requirements and standards.",
-      "Produced 3D-printed prototype components for design reviews and assisted with machining the final design.",
-      "Coordinated mechanical design decisions across the team as the prototype developed."
-    ],
-    "specs": [
-      [
-        "Project",
-        "UMass MIE 414 · Team 1406"
-      ],
-      [
-        "Sponsor",
-        "Raytheon Missiles & Defense (RTX)"
-      ],
-      [
-        "Role",
-        "Mechanical Design Lead"
-      ],
-      [
-        "Function",
-        "Passive two-way pressure equalization"
-      ],
-      [
-        "Architecture",
-        "Windbreaker · removable filter · valve"
-      ],
-      [
-        "Materials",
-        "6061 aluminum · prototype printed components"
-      ],
-      [
-        "Design software",
-        "SOLIDWORKS + early flow simulation"
-      ],
-      [
-        "Evaluation",
-        "Airflow · pressure differential · debris/water filtration"
-      ]
-    ],
-    "process": [
-      [
-        "Set design constraints",
-        "Fit within the existing access-panel geometry, require no power or operator action, and maintain weather and debris protection."
-      ],
-      [
-        "Generate valve concepts",
-        "Evaluate low-pressure high-flow options, including an initial butterfly concept and a bidirectional spring-loaded plate valve."
-      ],
-      [
-        "Design modular construction",
-        "Create a perforated windbreaker, serviceable hydrophobic filter cartridge, and spring-loaded valve assembly with separable machined components."
-      ],
-      [
-        "Detail parts for manufacturing",
-        "Refine tolerances and interfaces in SOLIDWORKS and prepare dimensioned drawings for each part and the assembled system."
-      ],
-      [
-        "Prototype and fabricate",
-        "Use 3D prints for fit and alignment checks, then CNC-machine and assemble the physical aluminum valve prototype with springs and gaskets."
-      ],
-      [
-        "Evaluate performance",
-        "Compare flow-rate and pressure-differential behavior with design targets and assess water/debris sealing; summarize results on the project poster."
-      ]
-    ],
-    "technicalNote": "The spring showcase poster reports a 0.055 psi modeled stacked pressure differential and documents component testing, including flow rates, spring configurations, and filter performance. The poster also notes improvement opportunities for drainage, gasket materials, and valve-seal tolerances. These are team-reported results, not a claim of independently certified compliance. Team members: Lucca Garcia, Aidan Hamblin, Ethan Gattoni, Ethan Voellmicke, and Katie Barberi.",
-    "next": "Expand documentation of prototype validation, sealing, and drainage improvements.",
-    "resources": [
-      {
-        "label": "Full showcase poster (image)",
-        "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/showcase-poster.webp"
-      },
-      {
-        "label": "Selected valve engineering drawings",
-        "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/valve-engineering-drawings.jpg"
-      },
-      {
-        "label": "Windbreaker and filter drawings",
-        "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/windbreaker-filter-drawings.jpg"
       }
     ]
   },
@@ -896,9 +896,9 @@ window.PORTFOLIO_PROJECTS = [
         "caption": "Close-up of the printed overhang. Fraying and local sagging show the tradeoff between support material and surface quality; the report states the main load-bearing walls remained intact."
       }
     ],
-    "meta": "Class record · 11.7 g bridge · 20 lb load",
+    "meta": "Course record · 11.7 g bridge · 20 lb load",
     "overviewHeading": "Designed through iteration",
-    "overview": "The challenge was to support a 20 lb central load with as little printed material as possible. My design approach was iterative: establish a load-bearing baseline, remove unnecessary material, investigate failures, and refine both geometry and print orientation. The design evolved from a dense truss to an open frame with I-beam members, larger fillets and greater lateral rigidity. The final iteration supported the required load; the finished bridge weighed 11.7 g. The report documents a fabrication cost of $4.46 and a print time of 1 hour 53 minutes. The bridge set the class record for the lightest successful structure, which I still hold.",
+    "overview": "The challenge was to support a 20 lb central load with as little printed material as possible. My design approach was iterative: establish a load-bearing baseline, remove unnecessary material, investigate failures, and refine both geometry and print orientation. The design evolved from a dense truss to an open frame with I-beam members, larger fillets and greater lateral rigidity. The final iteration supported the required load; the finished bridge weighed 11.7 g. The report documents a fabrication cost of $4.46 and a print time of 1 hour 53 minutes. The bridge set the course record for the lightest successful structure, which I still hold.",
     "contributionHeading": "Design decisions",
     "contributions": [
       "Used successive prototypes and load tests to guide material reduction and structural refinement.",
@@ -936,7 +936,7 @@ window.PORTFOLIO_PROJECTS = [
         "20 lb"
       ],
       [
-        "Class result",
+        "Course result",
         "Lightest successful bridge"
       ],
       [
@@ -979,15 +979,15 @@ window.PORTFOLIO_PROJECTS = [
     "mediaIntro": "Original CAD, dimensioned sections, ANSYS plots and build photographs extracted from the course report. Select any figure to enlarge; source image details and simulation legends are preserved.",
     "next": "The biggest improvement came from responding to observed failure, rather than simply adding material. Future iterations would plan manual supports earlier, explore more candidate geometries before printing, and remove additional material only after checking lateral stability and print quality.",
     "award": {
-      "title": "Class record",
+      "title": "Course record",
       "event": "Lightest bridge to support 20 lb",
       "detail": "Additive Manufacturing Processes final project · record remains unbeaten",
       "src": "media/lightweight-bridge/bridge-design.webp",
       "caption": "CAD view of the lightweight bridge design used for the Additive Manufacturing Processes final project.",
-      "label": "CLASS RECORD",
-      "ariaLabel": "Class record",
+      "label": "COURSE RECORD",
+      "ariaLabel": "Course record",
       "linkLabel": "View bridge design",
-      "linkAria": "View class-record bridge design"
+      "linkAria": "View course-record bridge design"
     },
     "iterations": [
       {
