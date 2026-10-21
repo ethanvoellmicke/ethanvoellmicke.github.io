@@ -41,3 +41,7 @@
 .senior-design-overview-gallery>.quiet{max-width:720px}
 .senior-design-overview-gallery .gallery{margin-top:18px!important}
 .senior-design-overview-gallery .gallery img{object-fit:contain;background:#eff0f0}
+
+/* Preserve the complete car crop and frame its driving demonstration. */
+.project-card[data-project="robotic-car"] .card-art{background:#e8e7e0}.project-card[data-project="robotic-car"] .card-art img{object-fit:contain;object-position:center}
+.video-grid.video-grid-single{grid-template-columns:1fr;max-width:700px;margin-inline:auto}.video-grid-single .video-card video{height:min(65vh,520px)}
