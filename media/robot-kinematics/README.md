@@ -17,3 +17,9 @@ Eight original embedded images were extracted and converted to lossless WebP. On
 ## Results and interpretation
 The comparison uses the page 11 architecture-comparison table: RPR average/minimum manipulability 1.1044/0.1880 and max condition number 11.02; PRRR 0.6732/0.2254 and 14.85. Both have 100% target reachability. The adjacent narrative contains an inconsistent RPR average (1.144); the table and parameter summary agree on 1.1044 and are used instead.
 The PRRR geometry/results sections give inconsistent L4 examples; the parameter-study caption explicitly identifies its selected L3=0.5 m and L4=0.2 m, rather than claiming all figures use the same geometry. Jacobian quantities retain the report's conventions. No physically measured accuracy, dynamics, obstacle avoidance or code availability is invented.
+
+## Higher-resolution configuration plots
+The portfolio now uses the original uploaded PNGs for both configuration plots, replacing the small PDF extractions. No resizing, cropping or pixel edits were applied.
+- rpr-configurations-hd.png: image(20261021-120542).png, 2048 × 1523.
+- prrr-configurations-hd.png: image(20261021-120600).png, 2047 × 1389. Used on the project card, overview cover and study gallery.
+The original report extractions remain in repository history/assets for provenance; the live project references the higher-resolution replacements.

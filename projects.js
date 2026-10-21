@@ -1107,13 +1107,13 @@ window.PORTFOLIO_PROJECTS = [
       "Singularity analysis",
       "Parameter studies"
     ],
-    "image": "media/robot-kinematics/prrr-configurations.webp",
+    "image": "media/robot-kinematics/prrr-configurations-hd.png",
     "imageCaption": "4-DOF PRRR robot configurations at targets T1, T2 and T3. Original MATLAB simulation plot from the project report.",
     "repo": null,
     "video": null,
     "photos": [
       {
-        "src": "media/robot-kinematics/rpr-configurations.webp",
+        "src": "media/robot-kinematics/rpr-configurations-hd.png",
         "caption": "3-DOF RPR configurations at the three target poses. R denotes a revolute joint; P denotes a prismatic joint. Original MATLAB plot from the report."
       },
       {
