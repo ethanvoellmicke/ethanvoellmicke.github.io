@@ -308,6 +308,10 @@ window.PORTFOLIO_PROJECTS = [
     {
       "src": "media/senior-design/windbreaker-filter-drawings.jpg",
       "caption": "Windbreaker and filter housing designs and engineering drawings from the capstone report"
+    },
+    {
+      "src": "media/senior-design/early-flow-simulation.png",
+      "caption": "SOLIDWORKS Flow Simulation on an early pressure-relief system model, used to explore airflow through the initial geometry."
     }
   ],
   "mediaHeading": "CAD, manufactured hardware & drawings",
@@ -399,5 +403,211 @@ window.PORTFOLIO_PROJECTS = [
       "url": "https://raw.githubusercontent.com/ethanvoellmicke/ethanvoellmicke.github.io/main/media/senior-design/windbreaker-filter-drawings.jpg"
     }
   ]
+},
+ {
+  "id": "microneedle-actuator",
+  "number": "07",
+  "title": "Vacuum-Powered Microneedle Actuators",
+  "category": "Research / soft actuators",
+  "filters": [
+    "research",
+    "mechanical"
+  ],
+  "summary": "Research into vacuum-powered soft actuators for steering microneedles, including patterned geometry and dot-density studies.",
+  "description": "THEAM Lab research at UMass Amherst exploring air-pressure actuation through vacuum-powered soft mechanisms for microneedle steering.",
+  "tags": [
+    "Soft actuators",
+    "Pneumatics",
+    "SOLIDWORKS",
+    "SOLIDWORKS Visualize",
+    "Material modeling",
+    "Microprinting"
+  ],
+  "image": "media/microneedle-actuator/microneedle-curved-render.webp",
+  "imageCaption": "Curved microneedle actuator concept, rendered in SOLIDWORKS Visualize.",
+  "repo": null,
+  "video": null,
+  "photos": [
+    {
+      "src": "media/microneedle-actuator/needle-transition-detail.webp",
+      "caption": "Close view of the modeled needle transition and patterned actuator body, rendered in SOLIDWORKS Visualize."
+    },
+    {
+      "src": "media/microneedle-actuator/dot-pattern-detail.webp",
+      "caption": "Dot-pattern detail from the density and geometry exploration. SOLIDWORKS Visualize rendering of the design concept."
+    },
+    {
+      "src": "media/microneedle-actuator/straight-needle-cad.webp",
+      "caption": "Straight needle and actuator concept in SOLIDWORKS CAD, showing the patterned body and needle tip."
+    },
+    {
+      "src": "media/microneedle-actuator/additional-dot-detail.webp",
+      "caption": "Additional actuator-body detail showing staggered dot rows and the central longitudinal geometry. SOLIDWORKS design visualization."
+    },
+    {
+      "src": "media/microneedle-actuator/dot-spacing-detail.webp",
+      "caption": "Close-up of dot spacing along the patterned actuator body, included as an additional geometry-study view."
+    },
+    {
+      "src": "media/microneedle-actuator/straight-body-study.webp",
+      "caption": "Straight actuator-body CAD study showing repeated patterned geometry along its length."
+    },
+    {
+      "src": "media/microneedle-actuator/straight-body-alternate.webp",
+      "caption": "Alternate straight-body CAD view for inspecting the full patterned geometry."
+    }
+  ],
+  "meta": "THEAM Lab · Microneedle steering · Soft actuation",
+  "art": "arm",
+  "overviewHeading": "Research overview",
+  "overview": "As an undergraduate researcher in UMass Amherst’s THEAM Lab, I led research and design of a vacuum-powered soft actuator concept intended to steer microneedles for surgical applications. I developed microscale actuator concepts in SOLIDWORKS and explored dot density and patterned geometry as design variables. Material modeling supported investigation of stress and deformation, while microprinting and additive manufacturing were explored as routes toward flexible, biocompatible prototypes. The images show the needle/actuator concept and related patterned-body studies, including SOLIDWORKS Visualize renders.",
+  "contributionHeading": "My research",
+  "contributions": [
+    "Led concept development for a vacuum-powered soft mechanism for microneedle steering.",
+    "Created microscale actuator geometry in SOLIDWORKS and used material modeling to examine stress and deformation.",
+    "Experimented with dot-pattern density and geometric detail within a needle/actuator concept.",
+    "Created SOLIDWORKS Visualize renders and explored microprinting and additive manufacturing approaches."
+  ],
+  "specs": [
+    [
+      "Research group",
+      "THEAM Lab · UMass Amherst"
+    ],
+    [
+      "Role",
+      "Undergraduate Researcher"
+    ],
+    [
+      "Research period",
+      "April 2025 – May 2026"
+    ],
+    [
+      "Actuation concept",
+      "Vacuum-powered soft mechanism"
+    ],
+    [
+      "Design variables",
+      "Patterned geometry · dot density"
+    ],
+    [
+      "Tools",
+      "SOLIDWORKS · SOLIDWORKS Visualize"
+    ],
+    [
+      "Fabrication study",
+      "Microprinting · additive manufacturing"
+    ]
+  ],
+  "process": [
+    [
+      "Develop the actuation concept",
+      "Explore a vacuum-powered soft mechanism intended to produce controlled microneedle steering."
+    ],
+    [
+      "Investigate patterned geometry",
+      "Vary dot density and local geometry in SOLIDWORKS as part of the actuator concept study."
+    ],
+    [
+      "Evaluate and communicate the design",
+      "Use material modeling to study stress and deformation, create Visualize renders, and investigate potential fabrication approaches."
+    ]
+  ],
+  "technicalNote": "The documentation focuses on actuator concepts, patterned geometry, and material-modeling investigations. The curved and detail images are design renders made in SOLIDWORKS Visualize; the straight configuration is a CAD view. Microprinting and prototype fabrication were explored as research directions.",
+  "mediaHeading": "Needle concept & patterned-body studies",
+  "mediaIntro": "CAD views and renders of the needle/actuator concept and related patterned-body studies. Detail views show the dot rows and local geometry; overall views show straight and curved configurations. Dot density was explored as a design variable. Select an image to enlarge it.",
+  "next": "Add fabrication documentation and measured pressure–deformation data when available.",
+  "mediaTabLabel": "Design gallery"
+},
+ {
+  "id": "lightweight-bridge",
+  "number": "08",
+  "title": "Lightweight 3D-Printed Bridge",
+  "category": "Additive manufacturing / class project",
+  "filters": [
+    "mechanical"
+  ],
+  "summary": "A bridge under 12 g that held 20 lb, setting the course record for the lightest successful structure.",
+  "description": "An Additive Manufacturing Processes final project: design and 3D-print the lightest possible bridge capable of supporting a 20 lb load.",
+  "tags": [
+    "Additive manufacturing",
+    "3D printing",
+    "Lightweight design",
+    "Structural design",
+    "Support strategy"
+  ],
+  "image": "media/lightweight-bridge/bridge-design.webp",
+  "imageCaption": "CAD view of the lightweight bridge design used for the Additive Manufacturing Processes final project.",
+  "repo": null,
+  "video": null,
+  "photos": [],
+  "meta": "Course record · <12 g structure · 20 lb load",
+  "overviewHeading": "Design & result",
+  "overview": "For the final project in Additive Manufacturing Processes, I designed and 3D-printed a bridge to support 20 lb with the lowest possible finished mass. I applied the course’s 3D-printing and manufacturing principles to refine the geometry, reduce structural mass, and plan removable supports. The finished bridge weighed under 12 g after removing 3 g of support material and held the required 20 lb load. It set the course record for the lightest successful structure, and I still hold that record.",
+  "contributionHeading": "My design work",
+  "contributions": [
+    "Developed a lightweight bridge geometry around the 20 lb load requirement.",
+    "Applied additive-manufacturing principles to balance structural efficiency and printability.",
+    "Produced a finished structure under 12 g, with 3 g of print supports removed before loading.",
+    "Demonstrated the required load capacity and set the course’s lightest-structure record."
+  ],
+  "specs": [
+    [
+      "Course",
+      "Additive Manufacturing Processes"
+    ],
+    [
+      "Project",
+      "Final design-and-build challenge"
+    ],
+    [
+      "Finished structure",
+      "Under 12 g · supports excluded"
+    ],
+    [
+      "Print supports",
+      "3 g · removed before loading"
+    ],
+    [
+      "Load supported",
+      "20 lb"
+    ],
+    [
+      "Course result",
+      "Lightest successful bridge"
+    ],
+    [
+      "Record status",
+      "Still held"
+    ]
+  ],
+  "process": [
+    [
+      "Design for the load",
+      "Develop a bridge geometry capable of meeting the course’s 20 lb loading requirement."
+    ],
+    [
+      "Reduce finished mass",
+      "Apply the course’s additive-manufacturing principles to refine the load-bearing geometry and print-support strategy."
+    ],
+    [
+      "Print, finish & test",
+      "3D-print the structure, remove the 3 g of supports, and test the finished bridge under the required 20 lb load."
+    ]
+  ],
+  "technicalNote": "The reported structural mass excludes the 3 g of support material removed after printing. The uploaded image is a CAD view of the bridge design. Build and test photographs can be added to document the printed structure and loading setup.",
+  "mediaHeading": "Bridge design",
+  "mediaIntro": "CAD view of the structure used for the course project. Select the image to inspect the geometry.",
+  "next": "Add the print material, settings, bridge span, and photographs of the completed structure and load test.",
+  "award": {
+    "title": "Course record",
+    "event": "Lightest bridge to support 20 lb",
+    "detail": "Additive Manufacturing Processes final project · record remains unbeaten",
+    "src": "media/lightweight-bridge/bridge-design.webp",
+    "caption": "CAD view of the lightweight bridge design used for the Additive Manufacturing Processes final project.",
+    "label": "COURSE RECORD",
+    "ariaLabel": "Course record",
+    "linkLabel": "View bridge design",
+    "linkAria": "View course-record bridge design"
+  }
 }
 ];
