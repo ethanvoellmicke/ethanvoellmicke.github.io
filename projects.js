@@ -461,7 +461,7 @@ window.PORTFOLIO_PROJECTS = [
     "image": "media/i2c-arm/arm-cover.png",
     "imageCaption": "Two-joint robotic arm with dual Arduino Nano RP2040 control and breadboard electronics",
     "repo": "https://github.com/ethanvoellmicke/ethanvoellmicke.github.io/tree/main/media/i2c-arm",
-    "video": "https://drive.google.com/file/d/1nS1gmgqmsx6ruByhB7dr1WH9augSv4oT/view",
+    "video": null,
     "photos": [],
     "meta": "2 Nano RP2040 boards · I²C · 3 control modes",
     "art": "i2c",
@@ -628,6 +628,14 @@ window.PORTFOLIO_PROJECTS = [
       {
         "label": "Follower Arduino firmware",
         "url": "https://github.com/ethanvoellmicke/ethanvoellmicke.github.io/blob/main/media/i2c-arm/FinalProjectCodeFollower.ino"
+      }
+    ],
+    "videos": [
+      {
+        "src": "media/i2c-arm/arm-demonstration.mp4",
+        "poster": "media/i2c-arm/arm-demonstration-poster.jpg",
+        "title": "Dual-Arduino arm demonstration",
+        "caption": "The assembled two-joint robotic arm in operation, with its breadboard electronics, dual-controller setup and laptop interface."
       }
     ]
   },

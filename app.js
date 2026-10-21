@@ -28,9 +28,6 @@ function videoHTML(p){
  if(!p.video&&p.mediaIntro)return "";
  if(!p.video)return '<div class="media-note"><h3>See the build in action.</h3><p>Demonstration footage will be added here. '+(p.id==="quadruped"?'The CAD assembly and electrical schematic are available below.':'Build photos and source files will be added as the project documentation is expanded.')+'</p></div>';
  const url=safeURL(p.video);if(!url)return "";
- const driveMatch=url.match(/^https:\/\/drive\.google\.com\/file\/d\/([A-Za-z0-9_-]+)(?:\/|$)/);
- if(driveMatch)return '<section class="video-section"><h3>See it in motion</h3><div class="project-video project-video-embed"><iframe src="https://drive.google.com/file/d/'+esc(driveMatch[1])+'/preview" title="'+esc(p.title+' demonstration')+'" loading="lazy" allow="autoplay; fullscreen; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></section>';
-
  return /\.(mp4|webm)(\?.*)?$/i.test(url)?'<video class="project-video" controls preload="metadata" src="'+esc(url)+'">Your browser does not support this video.</video>':'<a class="button primary" href="'+esc(url)+'" target="_blank" rel="noopener">Watch the project video ↗</a>';
 }
 function galleryHTML(p){
