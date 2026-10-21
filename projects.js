@@ -664,20 +664,8 @@ window.PORTFOLIO_PROJECTS = [
         "caption": "Dot-pattern detail from the density and geometry exploration. SOLIDWORKS Visualize rendering of the design concept."
       },
       {
-        "src": "media/microneedle-actuator/straight-needle-cad.webp",
-        "caption": "Straight needle and actuator concept in SOLIDWORKS CAD, showing the patterned body and needle tip."
-      },
-      {
-        "src": "media/microneedle-actuator/additional-dot-detail.webp",
-        "caption": "Additional actuator-body detail showing staggered dot rows and the central longitudinal geometry. SOLIDWORKS design visualization."
-      },
-      {
         "src": "media/microneedle-actuator/dot-spacing-detail.webp",
         "caption": "Close-up of dot spacing along the patterned actuator body, included as an additional geometry-study view."
-      },
-      {
-        "src": "media/microneedle-actuator/straight-body-study.webp",
-        "caption": "Straight actuator-body CAD study showing repeated patterned geometry along its length."
       },
       {
         "src": "media/microneedle-actuator/straight-body-alternate.webp",
