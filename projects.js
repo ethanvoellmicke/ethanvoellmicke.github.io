@@ -23,7 +23,12 @@ window.PORTFOLIO_PROJECTS = [
     "imageCaption": "SOLIDWORKS assembly",
     "repo": "https://github.com/ethanvoellmicke/quadruped-robot",
     "video": null,
-    "photos": [],
+    "photos": [
+      {
+        "src": "media/quadruped/quadruped-build-photo.jpg",
+        "caption": "Physical 12-DOF quadruped build, showing the 3D-printed structure, servo wiring and onboard battery alongside the laptop control and serial-monitor setup."
+      }
+    ],
     "meta": "12 joints · Custom hardware · IMU feedback",
     "overview": "I designed, manufactured, and programmed the robot to connect custom mechanical hardware with embedded motion control. The build combines servo-driven mechanisms, foot trajectories, analytical inverse kinematics, and roll/pitch feedback in one modular system.",
     "contributions": [
@@ -82,7 +87,9 @@ window.PORTFOLIO_PROJECTS = [
     ],
     "technicalNote": "The supplied firmware includes stand, crawl, and trot modes. Roll and pitch feedback are disabled during trot in the supplied controller. Gait tuning and physical testing are ongoing; no measured terrain or speed claims are implied.",
     "next": "Continue physical gait tuning and document stabilization response. An onboard camera and machine-learning-based perception are planned future work.",
-    "wiring": "assets/quadruped-wiring.svg"
+    "wiring": "assets/quadruped-wiring.svg",
+    "mediaHeading": "From CAD to the physical build",
+    "mediaIntro": "The CAD assembly, physical build photograph and wiring schematic document the robot’s mechanical structure and electronics integration. Select an image to enlarge it."
   },
   {
     "id": "robotic-arm",
