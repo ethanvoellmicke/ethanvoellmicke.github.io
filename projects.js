@@ -804,7 +804,7 @@ window.PORTFOLIO_PROJECTS = [
     "filters": [
       "mechanical"
     ],
-    "summary": "A bridge under 12 g that held 20 lb, setting the course record for the lightest successful structure.",
+    "summary": "A bridge under 12 g that held 20 lb, setting the class record for the lightest successful structure.",
     "description": "A record-setting bridge developed through successive CAD, FEA, print and load-test iterations for an Additive Manufacturing Processes final project.",
     "tags": [
       "FDM / PLA",
@@ -863,9 +863,9 @@ window.PORTFOLIO_PROJECTS = [
         "caption": "Close-up of the printed overhang. Fraying and local sagging show the tradeoff between support material and surface quality; the report states the main load-bearing walls remained intact."
       }
     ],
-    "meta": "Course record · <12 g structure · 20 lb load",
+    "meta": "Class record · <12 g structure · 20 lb load",
     "overviewHeading": "Designed through iteration",
-    "overview": "The challenge was to support a 20 lb central load with as little printed material as possible. My design approach was iterative: establish a load-bearing baseline, remove unnecessary material, investigate failures, and refine both geometry and print orientation. The design evolved from a dense truss to an open frame with I-beam members, larger fillets and greater lateral rigidity. The finished bridge I reported weighed under 12 g after removing 3 g of print supports, held 20 lb, and set the course’s lightest-successful-structure record, which I still hold.",
+    "overview": "The challenge was to support a 20 lb central load with as little printed material as possible. My design approach was iterative: establish a load-bearing baseline, remove unnecessary material, investigate failures, and refine both geometry and print orientation. The design evolved from a dense truss to an open frame with I-beam members, larger fillets and greater lateral rigidity. The finished bridge I reported weighed under 12 g after removing 3 g of print supports, held 20 lb, and set the class’s lightest-successful-structure record, which I still hold.",
     "contributionHeading": "Design decisions",
     "contributions": [
       "Used successive prototypes and load tests to guide material reduction and structural refinement.",
@@ -895,7 +895,7 @@ window.PORTFOLIO_PROJECTS = [
         "20 lb"
       ],
       [
-        "Course result",
+        "Class result",
         "Lightest successful bridge"
       ],
       [
@@ -938,15 +938,15 @@ window.PORTFOLIO_PROJECTS = [
     "mediaIntro": "Original CAD, dimensioned sections, ANSYS plots and build photographs extracted from the course report. Select any figure to enlarge; source image details and simulation legends are preserved.",
     "next": "The biggest improvement came from responding to observed failure, rather than simply adding material. Future iterations would plan manual supports earlier, explore more candidate geometries before printing, and remove additional material only after checking lateral stability and print quality.",
     "award": {
-      "title": "Course record",
+      "title": "Class record",
       "event": "Lightest bridge to support 20 lb",
       "detail": "Additive Manufacturing Processes final project · record remains unbeaten",
       "src": "media/lightweight-bridge/bridge-design.webp",
       "caption": "CAD view of the lightweight bridge design used for the Additive Manufacturing Processes final project.",
-      "label": "COURSE RECORD",
-      "ariaLabel": "Course record",
+      "label": "CLASS RECORD",
+      "ariaLabel": "Class record",
       "linkLabel": "View bridge design",
-      "linkAria": "View course-record bridge design"
+      "linkAria": "View class-record bridge design"
     },
     "iterations": [
       {
