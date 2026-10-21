@@ -89,7 +89,21 @@ window.PORTFOLIO_PROJECTS = [
     "next": "Continue physical gait tuning and document stabilization response. An onboard camera and machine-learning-based perception are planned future work.",
     "wiring": "assets/quadruped-wiring.svg",
     "mediaHeading": "From CAD to the physical build",
-    "mediaIntro": "The CAD assembly, physical build photograph and wiring schematic document the robot’s mechanical structure and electronics integration. Select an image to enlarge it."
+    "mediaIntro": "The CAD assembly, physical build photograph and wiring schematic document the robot’s mechanical structure and electronics integration. Select an image to enlarge it.",
+    "upcomingVideos": [
+      {
+        "title": "Crawl gait",
+        "description": "Coordinated crawl gait footage."
+      },
+      {
+        "title": "Trot gait",
+        "description": "Trot gait demonstration."
+      },
+      {
+        "title": "Crab walking",
+        "description": "Sideways walking demonstration."
+      }
+    ]
   },
   {
     "id": "robotic-arm",

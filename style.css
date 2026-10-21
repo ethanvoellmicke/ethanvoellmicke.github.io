@@ -77,3 +77,6 @@
 
 /* Keep hosted demonstration playback within the project page. */
 .project-video-embed{overflow:hidden}.project-video-embed iframe{width:100%;height:min(70vh,540px);aspect-ratio:auto;display:block;border:0}@media(max-width:650px){.project-video-embed iframe{height:min(65vh,440px)}}
+
+/* Clearly labeled placeholders for planned quadruped demonstration footage. */
+.upcoming-videos{margin-bottom:34px}.upcoming-videos>h3{margin-top:10px}.upcoming-videos>p{font-size:13px;margin-bottom:22px}.upcoming-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.upcoming-video-card{border:1px solid var(--line);border-radius:6px;background:var(--pale);padding:25px 20px;min-height:155px}.coming-soon-label{font-size:8px;letter-spacing:1.2px;font-weight:700;color:var(--green)}.upcoming-video-card h4{font-size:20px;font-weight:500;letter-spacing:-.4px;margin:20px 0 9px}.upcoming-video-card p{font-size:12px;line-height:1.6;margin:0}@media(max-width:650px){.upcoming-video-grid{grid-template-columns:1fr}.upcoming-video-card{min-height:0;padding:21px}.upcoming-video-card h4{margin-top:13px}}
