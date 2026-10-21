@@ -983,8 +983,8 @@ window.PORTFOLIO_PROJECTS = [
       ]
     ],
     "technicalNote": "ANSYS was used to investigate stress concentrations under an idealized downward load with fixed edges. Physical testing revealed lateral instability that simplified bending calculations did not capture. The iteration comparison combines the report’s earlier design metrics and fabrication costs with my corrected final bridge mass of 11.7 g.",
-    "mediaHeading": "From the first truss to the printed bridge",
-    "mediaIntro": "Original CAD, dimensioned sections, ANSYS plots and build photographs extracted from the course report. Select any figure to enlarge; source image details and simulation legends are preserved.",
+    "mediaHeading": "Design iterations & test evidence",
+    "mediaIntro": "The video documents the printed bridge under load. Original CAD, dimensioned sections, ANSYS plots and build photographs show the design progression. Select any figure to enlarge it.",
     "next": "The biggest improvement came from responding to observed failure, rather than simply adding material. Future iterations would plan manual supports earlier, explore more candidate geometries before printing, and remove additional material only after checking lateral stability and print quality.",
     "award": {
       "title": "Course record",
@@ -1034,7 +1034,7 @@ window.PORTFOLIO_PROJECTS = [
     "nextHeading": "What I learned",
     "figuresHeading": "Analysis, section design & print evidence",
     "figuresAriaLabel": "Bridge engineering evidence",
-    "mediaTabLabel": "Design gallery",
+    "mediaTabLabel": "Photos & video",
     "figures": [
       {
         "src": "media/lightweight-bridge/iteration-2-cross-section.webp",
@@ -1095,7 +1095,16 @@ window.PORTFOLIO_PROJECTS = [
         ]
       ],
       "note": "The final design improved lateral rigidity while reducing bridge mass to 11.7 g and maintaining structural integrity under the required 20 lb load."
-    }
+    },
+    "videos": [
+      {
+        "src": "media/lightweight-bridge/load-test.mp4",
+        "poster": "media/lightweight-bridge/load-test-poster.jpg",
+        "title": "Bridge load test",
+        "caption": "The physical 3D-printed bridge carrying a stack of weights in the course load-test fixture."
+      }
+    ],
+    "videoHeading": "Load-test footage"
   },
   {
     "id": "robot-kinematics",
