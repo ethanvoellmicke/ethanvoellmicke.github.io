@@ -71,3 +71,6 @@
 
 /* Use Ethan's supplied portrait in both personal introductions. */
 .profile-portrait>img{object-position:center center}.hero-portrait>img{border:1px solid #becfc3}
+
+/* A smaller workshop photograph adds a personal view in the detailed About section. */
+#about .profile-portrait{max-width:260px;aspect-ratio:787/1041}#about .profile-portrait>img{object-fit:contain}@media(max-width:650px){#about .profile-portrait{max-width:220px}}
