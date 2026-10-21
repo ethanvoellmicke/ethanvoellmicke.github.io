@@ -3,8 +3,9 @@
 Additive Manufacturing Processes final project: support a 20 lb central load for at least one second with minimal material. The course report documents FDM in PLA, iterative CAD/ANSYS work, print orientation and manual supports.
 
 ## Outcome and measurement provenance
-The portfolio follows the final-results narrative and Table 1: 17.1 g reported total mass, $4.46 fabrication cost, 1 hour 53 minutes print time, and a successful 20 lb load test. Table 1 also reports preceding iterations at 52 g / $13.24, 17 g / $7.86, and 12.3 g / $5.92.
-The abstract instead states 12.29 g; the results section and table are used consistently. No separate support mass or support-excluded structural mass is inferred. Earlier under-12 g and 3 g support claims have been replaced at the author's request. The still-standing class record is an author-supplied claim, not independently established by the report.
+Final bridge mass: 11.7 g, corrected directly by Ethan. This supersedes the inconsistent report mass entries. The portfolio does not attribute the corrected final mass to Table 1.
+The report supplies the $4.46 fabrication cost, 1 hour 53 minute print time and successful 20 lb load test. Earlier iteration masses/costs remain 52 g / $13.24, 17 g / $7.86, and 12.3 g / $5.92.
+The still-standing class record is an author-supplied claim. No separate support mass is inferred.
 
 ## Original figures
 Eleven embedded images were extracted from the supplied 618 Group 3 Final Report.pdf and converted to lossless WebP. Every decoded image was checked pixel-for-pixel against the extraction. No simulation legends, dimensions or curves were altered; no document text, author list or page chrome is embedded in the portfolio images.

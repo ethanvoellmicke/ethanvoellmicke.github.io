@@ -804,7 +804,7 @@ window.PORTFOLIO_PROJECTS = [
     "filters": [
       "mechanical"
     ],
-    "summary": "A 17.1 g, FDM-printed bridge that held 20 lb, developed through iterative design and load testing.",
+    "summary": "A 11.7 g, FDM-printed bridge that held 20 lb, developed through iterative design and load testing.",
     "description": "A record-setting bridge developed through successive CAD, FEA, print and load-test iterations for an Additive Manufacturing Processes final project.",
     "tags": [
       "FDM / PLA",
@@ -863,9 +863,9 @@ window.PORTFOLIO_PROJECTS = [
         "caption": "Close-up of the printed overhang. Fraying and local sagging show the tradeoff between support material and surface quality; the report states the main load-bearing walls remained intact."
       }
     ],
-    "meta": "Class record · 17.1 g reported mass · 20 lb load",
+    "meta": "Class record · 11.7 g bridge · 20 lb load",
     "overviewHeading": "Designed through iteration",
-    "overview": "The challenge was to support a 20 lb central load with as little printed material as possible. My design approach was iterative: establish a load-bearing baseline, remove unnecessary material, investigate failures, and refine both geometry and print orientation. The design evolved from a dense truss to an open frame with I-beam members, larger fillets and greater lateral rigidity. The final iteration supported the required load; the report’s results section records a total mass of 17.1 g, a fabrication cost of $4.46 and a print time of 1 hour 53 minutes. The bridge set the class record for the lightest successful structure, which I still hold.",
+    "overview": "The challenge was to support a 20 lb central load with as little printed material as possible. My design approach was iterative: establish a load-bearing baseline, remove unnecessary material, investigate failures, and refine both geometry and print orientation. The design evolved from a dense truss to an open frame with I-beam members, larger fillets and greater lateral rigidity. The final iteration supported the required load; the finished bridge weighed 11.7 g. The report documents a fabrication cost of $4.46 and a print time of 1 hour 53 minutes. The bridge set the class record for the lightest successful structure, which I still hold.",
     "contributionHeading": "Design decisions",
     "contributions": [
       "Used successive prototypes and load tests to guide material reduction and structural refinement.",
@@ -883,8 +883,8 @@ window.PORTFOLIO_PROJECTS = [
         "FDM · PLA"
       ],
       [
-        "Reported total mass",
-        "17.1 g"
+        "Bridge mass",
+        "11.7 g"
       ],
       [
         "Fabrication cost",
@@ -941,7 +941,7 @@ window.PORTFOLIO_PROJECTS = [
         "Iterate manual support placement and density. Inspect overhang sagging and fraying while checking that primary load-bearing walls remain intact."
       ]
     ],
-    "technicalNote": "ANSYS was used to investigate stress concentrations under an idealized downward load with fixed edges. Physical testing revealed lateral instability that simplified bending calculations did not capture. The iteration metrics below follow Table 1 and the final-results narrative in the course report. Reported total mass is used without inferring a separate support-material mass.",
+    "technicalNote": "ANSYS was used to investigate stress concentrations under an idealized downward load with fixed edges. Physical testing revealed lateral instability that simplified bending calculations did not capture. The iteration comparison combines the report’s earlier design metrics and fabrication costs with my corrected final bridge mass of 11.7 g.",
     "mediaHeading": "From the first truss to the printed bridge",
     "mediaIntro": "Original CAD, dimensioned sections, ANSYS plots and build photographs extracted from the course report. Select any figure to enlarge; source image details and simulation legends are preserved.",
     "next": "The biggest improvement came from responding to observed failure, rather than simply adding material. Future iterations would plan manual supports earlier, explore more candidate geometries before printing, and remove additional material only after checking lateral stability and print quality.",
@@ -1025,10 +1025,10 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     "results": {
-      "caption": "Design progression — values reported in Table 1 of the project report.",
+      "caption": "Design progression — earlier iteration values and costs from the project report; final mass updated to 11.7 g.",
       "headers": [
         "Iteration",
-        "Reported mass (g)",
+        "Mass (g)",
         "Cost (USD)"
       ],
       "rows": [
@@ -1049,11 +1049,11 @@ window.PORTFOLIO_PROJECTS = [
         ],
         [
           "3 · final",
-          "17.1",
+          "11.7",
           "$4.46"
         ]
       ],
-      "note": "The final design added lateral rigidity after Iteration 2’s instability. Its higher reported mass reflects the stiffness–mass tradeoff; it maintained structural integrity under the required 20 lb load."
+      "note": "The final design improved lateral rigidity while reducing bridge mass to 11.7 g and maintaining structural integrity under the required 20 lb load."
     }
   }
 ];
