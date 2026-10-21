@@ -1,5 +1,5 @@
 # Profile portrait
 
-The About section currently uses an EV monogram placeholder. Add a portrait as `media/profile/ethan-voellmicke.jpg`, then replace the `.portrait-placeholder` div in index.html with the image element shown in the adjacent HTML comment. Recommended portrait aspect ratio: 4:5. The existing `.profile-portrait` styles handle sizing and cropping. Use a real photo supplied by Ethan.
+ethan-voellmicke.png is the original image(20261021-122940).png supplied by Ethan for his portfolio. It is used in the top introduction and detailed About section. No pixel edits or retouching were applied; CSS frames the same image responsively in both locations.
 
-Education, GPA, coursework, experience and skills were transcribed from Ethan Voellmicke Resume_ (13).pdf. No personal telephone number or resume PDF is published by this update.
+Education, GPA, coursework, experience and skills were transcribed from Ethan Voellmicke Resume_ (13).pdf. No personal telephone number or résumé PDF is published by this update.
