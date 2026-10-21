@@ -1276,5 +1276,148 @@ window.PORTFOLIO_PROJECTS = [
     "mediaIntro": "Selected original figures from the robotics report, presented with individual explanations. R and P denote revolute and prismatic joints. Select any image to enlarge; the plotted data, axes and legends are unchanged.",
     "nextHeading": "Design takeaway",
     "next": "More degrees of freedom provide more configuration choices, but the task should determine whether that flexibility is worth the added complexity. Obstacle-aware motion planning would be a useful extension for testing where the PRRR architecture’s extra freedom becomes valuable."
+  },
+  {
+    "id": "construction-equipment",
+    "number": "10",
+    "title": "Construction Management & Equipment Repair",
+    "category": "Work experience / construction & equipment",
+    "filters": [
+      "experience",
+      "mechanical"
+    ],
+    "summary": "Managing site work and keeping heavy equipment working through operation, maintenance and hands-on mechanical repair.",
+    "description": "Construction Manager at Wenzel Inc., combining day-to-day crew and site coordination with heavy-equipment operation, preventive maintenance and mechanical troubleshooting.",
+    "tags": [
+      "Construction management",
+      "Equipment operation",
+      "Mechanical troubleshooting",
+      "Maintenance",
+      "Team coordination"
+    ],
+    "image": "media/construction-equipment/engine-bay-maintenance.jpg",
+    "imageCaption": "Hands-on engine-bay maintenance on construction equipment, showing the accessible hoses, filters, wiring and engine components.",
+    "repo": null,
+    "video": null,
+    "photos": [
+      {
+        "src": "media/construction-equipment/finished-walls-steps.jpg",
+        "caption": "Completed site work with retaining walls, stone steps, paved walkways and landscaped planting beds."
+      },
+      {
+        "src": "media/construction-equipment/hydraulic-breaker-site-work.jpg",
+        "caption": "CAT hydraulic-breaker attachment and broken concrete during demolition and site preparation."
+      },
+      {
+        "src": "media/construction-equipment/loader-operation.svg",
+        "caption": "My view from the cab while operating a loader on site. The black screenshot borders have been cropped out."
+      }
+    ],
+    "meta": "Wenzel Inc. · May 2024 – Sep 2026 · Field experience",
+    "overviewHeading": "Practical engineering, on site and under the hood",
+    "overview": "As a Construction Manager at Wenzel Inc., I coordinated daily work, equipment use and on-site problem solving across construction and site-development jobs. Alongside managing the work, I operated and maintained heavy machinery, including CAT equipment, and carried out mechanical troubleshooting, preventive maintenance and major repairs such as engine-component replacement. That combination connected planning with the practical demands of getting a job done: organizing a crew, keeping equipment available and responding when mechanical problems interrupted the work. The photographs show finished walls and steps, concrete-removal work, engine-bay maintenance and my view while operating a loader.",
+    "contributionHeading": "My responsibilities",
+    "contributions": [
+      "Coordinated day-to-day work, crew activities and equipment use across construction and site-development projects.",
+      "Operated heavy equipment and handled practical on-site problem solving.",
+      "Performed preventive maintenance and mechanical troubleshooting on construction machinery.",
+      "Carried out hands-on repairs, including engine-component replacement, to support reliable equipment operation."
+    ],
+    "specs": [
+      [
+        "Employer",
+        "Wenzel Inc."
+      ],
+      [
+        "Role",
+        "Construction Manager"
+      ],
+      [
+        "Period",
+        "May 2024 – September 2026"
+      ],
+      [
+        "Location",
+        "Millis, Massachusetts"
+      ],
+      [
+        "Site work",
+        "Construction · site development"
+      ],
+      [
+        "Equipment experience",
+        "Operation · maintenance · repair"
+      ],
+      [
+        "Photo documentation",
+        "Finished work · demolition · loader operation"
+      ],
+      [
+        "Repair documentation",
+        "Engine-bay photograph and video"
+      ]
+    ],
+    "processHeading": "How I approached the work",
+    "process": [
+      [
+        "Coordinate the day’s work",
+        "Organize crew activities and equipment use around the work that needs to be completed, adapting as site conditions change."
+      ],
+      [
+        "Operate and maintain equipment",
+        "Combine machinery operation with preventive maintenance and attention to mechanical condition."
+      ],
+      [
+        "Troubleshoot interruptions",
+        "Investigate equipment problems and carry out maintenance or component repairs to help return machinery to service."
+      ],
+      [
+        "Connect planning to the finished result",
+        "Keep day-to-day coordination and practical problem solving focused on completing the site work efficiently and meeting client expectations."
+      ]
+    ],
+    "technicalNote": "The role description follows my résumé. The site photographs document finished hardscape work and concrete removal; the loader image documents equipment operation. The engine photograph and short video show maintenance and repair activity, without claiming a specific diagnosis, repair specification or measured post-repair performance.",
+    "nextHeading": "What this experience taught me",
+    "next": "Reliable equipment and clear coordination matter as much as the plan on paper. Working directly with machinery strengthened my mechanical troubleshooting, maintenance habits and ability to solve practical problems while keeping a team’s work moving.",
+    "mediaTabLabel": "Sites & machinery",
+    "mediaGroups": [
+      {
+        "title": "Site work & equipment operation",
+        "description": "Finished installation details, site preparation and a view from the loader cab.",
+        "photos": [
+          {
+            "src": "media/construction-equipment/finished-walls-steps.jpg",
+            "caption": "Completed site work with retaining walls, stone steps, paved walkways and landscaped planting beds."
+          },
+          {
+            "src": "media/construction-equipment/hydraulic-breaker-site-work.jpg",
+            "caption": "CAT hydraulic-breaker attachment and broken concrete during demolition and site preparation."
+          },
+          {
+            "src": "media/construction-equipment/loader-operation.svg",
+            "caption": "My view from the cab while operating a loader on site. The black screenshot borders have been cropped out."
+          }
+        ]
+      },
+      {
+        "title": "Equipment maintenance & repair",
+        "description": "Hands-on mechanical work with the engine bay open, documented in the photograph and short video.",
+        "photos": [
+          {
+            "src": "media/construction-equipment/engine-bay-maintenance.jpg",
+            "caption": "Hands-on engine-bay maintenance on construction equipment, showing the accessible hoses, filters, wiring and engine components."
+          }
+        ],
+        "videos": [
+          {
+            "src": "media/construction-equipment/equipment-repair.mp4",
+            "poster": "media/construction-equipment/equipment-repair-poster.jpg",
+            "title": "Engine-bay repair work",
+            "caption": "A close view of hands-on work around the engine bay, including a removed component and the surrounding filters and connections."
+          }
+        ],
+        "videoHeading": "Equipment repair footage"
+      }
+    ]
   }
 ];

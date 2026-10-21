@@ -62,3 +62,6 @@
 
 /* Preserve original kinematics plots on the study cover. */
 .project-card[data-project="robot-kinematics"] .card-art{background:white}.project-card[data-project="robot-kinematics"] .card-art img{object-fit:contain;object-position:center;padding:15px}.project-card[data-project="robot-kinematics"] .card-no,.project-card[data-project="robot-kinematics"] .card-arrow{background:#f7f8f5e8;border-radius:3px;padding:3px 5px}
+
+/* Professional field experience: original portrait photos and distinct evidence groups. */
+.project-card[data-project="construction-equipment"] .card-art{background:#deded7}.project-card[data-project="construction-equipment"] .card-art img{object-fit:cover;object-position:center 48%}.project-card[data-project="construction-equipment"] .card-no,.project-card[data-project="construction-equipment"] .card-arrow{background:#f7f8f5e8;border-radius:3px;padding:3px 5px}.media-group+.media-group{margin-top:38px;padding-top:30px;border-top:1px solid var(--line)}.media-group .video-section{margin-top:28px}.media-group .gallery img{height:320px}.media-group .gallery figure:last-child:nth-child(odd){grid-column:1/-1}.media-group .gallery figure:last-child:nth-child(odd) img{height:360px}@media(max-width:650px){.media-group .gallery img,.media-group .gallery figure:last-child:nth-child(odd) img{height:300px}}
