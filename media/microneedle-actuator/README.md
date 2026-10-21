@@ -16,3 +16,5 @@ This portfolio project describes research and concept design of vacuum-powered s
 - `straight-body-alternate.webp`: Screenshot 2025-10-23 151739.png.
 
 Every image was converted losslessly to WebP; decoded RGBA pixels were compared with the source and matched exactly. Images were not regenerated, retouched, or relabeled as physical prototypes. No numerical dot densities or measured bending responses have been invented. The four additional October views are included for portfolio review.
+
+- `patterned-actuator-closeup.webp`: Screenshot 2025-10-16 121558.png. Additional close-up design visualization, converted losslessly and verified against decoded source RGBA pixels. No physical actuation or measured performance is inferred.
