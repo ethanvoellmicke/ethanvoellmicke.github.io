@@ -297,62 +297,8 @@ window.PORTFOLIO_PROJECTS = [
     ]
   },
   {
-    "id": "robotic-car",
-    "number": "04",
-    "title": "Classroom Robotic Car",
-    "category": "Vehicle / class project",
-    "filters": [
-      "vehicles",
-      "embedded"
-    ],
-    "summary": "A classroom-built car that turns programmed behavior into motion.",
-    "description": "A mobile car built for a class project, combining hardware integration and programmed driving behavior.",
-    "tags": [
-      "Mobile robotics",
-      "Embedded programming",
-      "Class project"
-    ],
-    "image": "media/robotic-car/car-cover.svg",
-    "repo": null,
-    "video": null,
-    "photos": [],
-    "meta": "Mobile platform · Driving behavior · Hardware integration",
-    "art": "car",
-    "overview": "Built as part of a class project, this mobile car combines a wheeled chassis, onboard electronics, and programmed driving behavior. The build photograph shows the assembled hardware, and the demonstration video captures the car in motion.",
-    "contributions": [
-      "Built a working mobile car for a class project.",
-      "Integrated the vehicle hardware with programmed driving behavior."
-    ],
-    "specs": [
-      [
-        "Platform",
-        "Classroom mobile car"
-      ],
-      [
-        "Behavior",
-        "Programmed driving"
-      ],
-      [
-        "Documentation",
-        "Build photograph and working driving demonstration"
-      ]
-    ],
-    "process": null,
-    "next": "Add the control code, hardware specifications, and a description of the driving behavior.",
-    "technicalNote": "The driving video documents the physical car in operation. Control code, sensor configuration, and detailed driving behavior will be documented with the project files.",
-    "imageCaption": "Classroom robotic car with its wheeled chassis, onboard electronics, and front-mounted ultrasonic sensor.",
-    "videos": [
-      {
-        "src": "media/robotic-car/driving-demo.mp4",
-        "poster": "media/robotic-car/driving-poster.jpg",
-        "title": "Driving test",
-        "caption": "The car driving across the floor during a working demonstration."
-      }
-    ]
-  },
-  {
     "id": "i2c-arm",
-    "number": "05",
+    "number": "04",
     "title": "Dual-Arduino I²C Robotic Arm",
     "category": "Mechatronics / embedded feedback control",
     "filters": [
@@ -544,7 +490,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     "id": "senior-design",
-    "number": "06",
+    "number": "05",
     "title": "RTX Senior Design — Pressure Relief System",
     "category": "Senior capstone / sponsor: Raytheon (RTX)",
     "filters": [
@@ -687,7 +633,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     "id": "microneedle-actuator",
-    "number": "07",
+    "number": "06",
     "title": "Vacuum-Powered Microneedle Actuators",
     "category": "Research / soft actuators",
     "filters": [
@@ -802,6 +748,98 @@ window.PORTFOLIO_PROJECTS = [
     "mediaIntro": "CAD views and renders of the needle/actuator concept and related patterned-body studies. Detail views show the dot rows and local geometry; overall views show straight and curved configurations. Dot density was explored as a design variable. Select an image to enlarge it.",
     "next": "Add fabrication documentation and measured pressure–deformation data when available.",
     "mediaTabLabel": "Design gallery"
+  },
+  {
+    "id": "robotic-car",
+    "number": "07",
+    "title": "Autonomous Robotic Car",
+    "category": "Mobile robotics / autonomous driving",
+    "filters": [
+      "vehicles",
+      "embedded"
+    ],
+    "summary": "An Arduino-based mobile robot combining onboard sensing, motor control and autonomous driving behavior.",
+    "description": "A compact autonomous robotic car built for a mechatronics class, integrating a wheeled chassis, Arduino control electronics and a front-mounted ultrasonic range sensor.",
+    "tags": [
+      "Arduino",
+      "Autonomous driving",
+      "Ultrasonic sensing",
+      "Motor control",
+      "Hardware integration"
+    ],
+    "image": "media/robotic-car/car-cover.svg",
+    "repo": null,
+    "video": null,
+    "photos": [],
+    "meta": "Arduino · Ultrasonic sensing · Mobile robotics",
+    "art": "car",
+    "overview": "I built this compact robotic car to connect embedded control with real-world motion. The platform brings together a two-wheel drive chassis, onboard battery power, Arduino electronics and a front-mounted ultrasonic range sensor. The sensor provides a way to measure the distance to objects ahead, while the controller translates programmed driving decisions into motor commands. The driving demonstration shows the assembled vehicle moving across a classroom floor and changing heading. This project brought sensing, wiring, power and actuation together in one working mobile system.",
+    "contributions": [
+      "Assembled the mobile chassis and integrated its drive hardware, onboard electronics and battery power.",
+      "Wired an Arduino-based control system with a front-mounted ultrasonic range sensor.",
+      "Programmed and tested vehicle motion on the completed hardware.",
+      "Documented the assembled system and a working floor-driving demonstration."
+    ],
+    "specs": [
+      [
+        "Platform",
+        "Two-wheel drive mobile robot"
+      ],
+      [
+        "Controller",
+        "Arduino"
+      ],
+      [
+        "Visible sensor",
+        "Front-mounted ultrasonic range sensor"
+      ],
+      [
+        "Power",
+        "Onboard battery"
+      ],
+      [
+        "Demonstration",
+        "Floor driving and heading changes"
+      ],
+      [
+        "Available documentation",
+        "Build photograph · driving video"
+      ]
+    ],
+    "process": [
+      [
+        "Sense the surroundings",
+        "The front ultrasonic sensor emits an acoustic pulse and measures the returning echo. Echo travel time can be converted into an estimate of the distance to an object ahead."
+      ],
+      [
+        "Make a driving decision",
+        "The Arduino runs the vehicle’s programmed behavior and issues motion commands. The exact decision rules and distance thresholds are no longer available in the original source files."
+      ],
+      [
+        "Control wheel motion",
+        "Motor commands produce forward motion and changes of heading. On a two-wheel drive platform, differing left and right wheel motion allows the vehicle to turn."
+      ],
+      [
+        "Test the integrated vehicle",
+        "The recorded floor test shows the powered vehicle driving and changing direction, documenting the mechanical, electrical and control system operating together."
+      ]
+    ],
+    "next": "Integrating the complete vehicle made the relationship between sensing, embedded decisions and physical motion tangible. The retained build photo and driving video preserve the working result.",
+    "technicalNote": "The original source code is no longer available. The photograph and video document the hardware and vehicle motion; the sensor explanation describes the operating principle of the visible ultrasonic hardware. Specific obstacle-avoidance logic, thresholds, feedback algorithms and autonomous navigation performance cannot be reconstructed from the footage alone.",
+    "imageCaption": "Autonomous robotic car with a two-wheel drive chassis, Arduino electronics and a front-mounted ultrasonic range sensor.",
+    "videos": [
+      {
+        "src": "media/robotic-car/driving-demo.mp4",
+        "poster": "media/robotic-car/driving-poster.jpg",
+        "title": "Driving test",
+        "caption": "The completed robotic car driving across a classroom floor and changing heading during a hardware demonstration."
+      }
+    ],
+    "overviewHeading": "From sensor input to vehicle motion",
+    "contributionHeading": "What I built",
+    "nextHeading": "Project takeaway",
+    "mediaHeading": "Hardware & driving demonstration",
+    "mediaIntro": "The build photo shows the chassis, control electronics and front ultrasonic sensor. The video records the completed car driving across the floor and changing heading. Select the photo to inspect the hardware."
   },
   {
     "id": "lightweight-bridge",
