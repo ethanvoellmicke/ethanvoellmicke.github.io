@@ -1310,7 +1310,7 @@ window.PORTFOLIO_PROJECTS = [
       },
       {
         "src": "media/construction-equipment/loader-operation.svg",
-        "caption": "My view from the cab while operating a loader on site. The black screenshot borders have been cropped out."
+        "caption": "Operating a loader in the main yard."
       }
     ],
     "meta": "Wenzel Inc. · May 2024 – Sep 2026 · Field experience",
@@ -1395,7 +1395,7 @@ window.PORTFOLIO_PROJECTS = [
           },
           {
             "src": "media/construction-equipment/loader-operation.svg",
-            "caption": "My view from the cab while operating a loader on site. The black screenshot borders have been cropped out."
+            "caption": "Operating a loader in the main yard."
           }
         ]
       },
