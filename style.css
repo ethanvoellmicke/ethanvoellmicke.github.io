@@ -74,3 +74,6 @@
 
 /* A smaller workshop photograph adds a personal view in the detailed About section. */
 #about .profile-portrait{max-width:260px;aspect-ratio:787/1041}#about .profile-portrait>img{object-fit:contain}@media(max-width:650px){#about .profile-portrait{max-width:220px}}
+
+/* Keep hosted demonstration playback within the project page. */
+.project-video-embed{overflow:hidden}.project-video-embed iframe{width:100%;height:min(70vh,540px);aspect-ratio:auto;display:block;border:0}@media(max-width:650px){.project-video-embed iframe{height:min(65vh,440px)}}
