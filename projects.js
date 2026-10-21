@@ -1088,5 +1088,193 @@ window.PORTFOLIO_PROJECTS = [
       ],
       "note": "The final design improved lateral rigidity while reducing bridge mass to 11.7 g and maintaining structural integrity under the required 20 lb load."
     }
+  },
+  {
+    "id": "robot-kinematics",
+    "number": "09",
+    "title": "Robot Kinematics & Singularity Analysis",
+    "category": "Robotics / MATLAB analysis",
+    "filters": [
+      "robotics",
+      "mechanical"
+    ],
+    "summary": "Comparing 3-DOF and 4-DOF robot architectures through inverse kinematics, continuous-path checks and link-length optimization.",
+    "description": "A MATLAB study of planar RPR and PRRR manipulators: reaching three prescribed poses, maintaining continuous motion and evaluating the tradeoff between added mobility and mechanical complexity.",
+    "tags": [
+      "MATLAB",
+      "Inverse kinematics",
+      "Jacobians",
+      "Singularity analysis",
+      "Parameter studies"
+    ],
+    "image": "media/robot-kinematics/prrr-configurations.webp",
+    "imageCaption": "4-DOF PRRR robot configurations at targets T1, T2 and T3. Original MATLAB simulation plot from the project report.",
+    "repo": null,
+    "video": null,
+    "photos": [
+      {
+        "src": "media/robot-kinematics/rpr-configurations.webp",
+        "caption": "3-DOF RPR configurations at the three target poses. R denotes a revolute joint; P denotes a prismatic joint. Original MATLAB plot from the report."
+      },
+      {
+        "src": "media/robot-kinematics/rpr-continuous-path.webp",
+        "caption": "RPR joint angles and prismatic extension along the sampled path. The original curves, axes and legends are preserved; no abrupt configuration switches appear in the plotted samples."
+      },
+      {
+        "src": "media/robot-kinematics/prrr-continuous-path.webp",
+        "caption": "PRRR joint angles and sliding-base position along the sampled path. The changing base position adds flexibility, with steeper variations than the RPR trajectory in this example."
+      },
+      {
+        "src": "media/robot-kinematics/rpr-parameter-study.webp",
+        "caption": "RPR link-length study: reachability, minimum and average manipulability, and maximum condition number versus L3. Full reachability is prioritized before comparing conditioning."
+      },
+      {
+        "src": "media/robot-kinematics/prrr-reachability-study.webp",
+        "caption": "PRRR reachability heat map for varying L3 and L4 with L2 fixed at 0.5 m. The original red circle marks the selected L3 = 0.5 m, L4 = 0.2 m combination."
+      },
+      {
+        "src": "media/robot-kinematics/rpr-inverse-kinematics.webp",
+        "caption": "RPR inverse-kinematics derivation: work backward from the target pose to locate the wrist, then solve the base rotation, extension and final joint angle."
+      },
+      {
+        "src": "media/robot-kinematics/prrr-inverse-kinematics.webp",
+        "caption": "PRRR inverse-kinematics derivation: choose the sliding-base position, solve the two-link arm geometry, then recover the final wrist orientation."
+      }
+    ],
+    "meta": "3 vs 4 DOF · MATLAB · Kinematic simulation",
+    "overviewHeading": "Does another joint improve the design?",
+    "overview": "I compared a three-degree-of-freedom RPR robot with a four-degree-of-freedom PRRR robot for a prescribed planar positioning task. Each architecture had to reach three end-effector poses and move continuously between them without encountering a singularity in the evaluated path. I derived inverse and forward kinematics, built Jacobian-based performance checks, and studied how link lengths affected reachability and conditioning. Both designs reached the targets with negligible calculated pose error. For this task, I selected the simpler RPR architecture: it offered smoother joint motion, higher average manipulability and a lower maximum condition number. The PRRR architecture improved the weakest-point manipulability, but its additional degree of freedom was not necessary for the specified motion.",
+    "contributionHeading": "What I developed",
+    "contributions": [
+      "Derived inverse and forward kinematics for planar RPR and PRRR robot geometries.",
+      "Used forward-kinematics reconstruction to check the inverse-kinematics solutions against each target pose.",
+      "Derived Jacobians and evaluated manipulability, minimum singular value and condition number.",
+      "Sampled each path segment at 60 points to inspect joint-variable continuity and possible configuration switches.",
+      "Swept link lengths and compared feasible architectures before selecting a design for the task."
+    ],
+    "specs": [
+      [
+        "Project",
+        "Robotics final project · May 2026"
+      ],
+      [
+        "Architectures",
+        "RPR · 3 DOF / PRRR · 4 DOF"
+      ],
+      [
+        "Target T1",
+        "(0.20 m, 0.20 m, 60°)"
+      ],
+      [
+        "Target T2",
+        "(1.00 m, 0.80 m, 125°)"
+      ],
+      [
+        "Target T3",
+        "(1.80 m, 0.50 m, −45°)"
+      ],
+      [
+        "Path sampling",
+        "60 points per segment"
+      ],
+      [
+        "Analysis tool",
+        "MATLAB"
+      ],
+      [
+        "Preferred architecture",
+        "RPR for this task"
+      ]
+    ],
+    "process": [
+      [
+        "Define the task and geometry",
+        "Set the target positions and orientations, joint limits and above-ground workspace. Compare a rotating–sliding–rotating chain with a sliding base carrying a three-revolute-joint arm."
+      ],
+      [
+        "Solve and validate each pose",
+        "Use inverse kinematics to recover joint variables from the desired end-effector pose. Reconstruct the pose with forward kinematics and calculate the residual error."
+      ],
+      [
+        "Evaluate local motion capability",
+        "Form the Jacobian from partial derivatives of the forward-kinematics equations. Use singular-value decomposition, manipulability and condition number to examine loss of motion capability and proximity to singular configurations."
+      ],
+      [
+        "Check the path between targets",
+        "Interpolate between target poses and solve the kinematics at 60 points per segment. Inspect the joint curves for abrupt jumps or changes of solution branch."
+      ],
+      [
+        "Study link lengths and choose an architecture",
+        "Vary RPR link L3, then vary PRRR links L3 and L4 with L2 fixed. Prioritize full reachability and compare performance only among feasible configurations."
+      ]
+    ],
+    "technicalNote": "This is a kinematic simulation study, with a massless-system assumption; it does not establish actuator loads, physical tracking accuracy or dynamic stability. The comparison below uses the report’s architecture-comparison table. Pose residuals are numerical checks, not physical measurements, and the Jacobian metrics depend on the coordinate and unit conventions used in the study. Continuity and singularity conclusions apply to the evaluated samples.",
+    "results": {
+      "heading": "Architecture comparison",
+      "caption": "Reported MATLAB study results for the specified task — architecture-comparison table, report page 11.",
+      "headers": [
+        "Metric",
+        "RPR · 3 DOF",
+        "PRRR · 4 DOF"
+      ],
+      "rows": [
+        [
+          "Target reachability",
+          "100%",
+          "100%"
+        ],
+        [
+          "Average manipulability",
+          "1.1044",
+          "0.6732"
+        ],
+        [
+          "Minimum manipulability",
+          "0.1880",
+          "0.2254"
+        ],
+        [
+          "Maximum condition number",
+          "11.02",
+          "14.85"
+        ],
+        [
+          "Joint-path continuity",
+          "Very smooth",
+          "Smooth"
+        ],
+        [
+          "Architecture complexity",
+          "Low",
+          "High"
+        ]
+      ],
+      "note": "RPR was selected for this task. PRRR’s higher minimum manipulability improved its weakest evaluated configuration, but the additional mobility did not outweigh its complexity for these targets."
+    },
+    "figuresHeading": "Trajectory & parameter studies",
+    "figuresAriaLabel": "Robot kinematics study figures",
+    "figures": [
+      {
+        "src": "media/robot-kinematics/rpr-continuous-path.webp",
+        "caption": "RPR joint angles and prismatic extension along the sampled path. The original curves, axes and legends are preserved; no abrupt configuration switches appear in the plotted samples."
+      },
+      {
+        "src": "media/robot-kinematics/prrr-continuous-path.webp",
+        "caption": "PRRR joint angles and sliding-base position along the sampled path. The changing base position adds flexibility, with steeper variations than the RPR trajectory in this example."
+      },
+      {
+        "src": "media/robot-kinematics/rpr-parameter-study.webp",
+        "caption": "RPR link-length study: reachability, minimum and average manipulability, and maximum condition number versus L3. Full reachability is prioritized before comparing conditioning."
+      },
+      {
+        "src": "media/robot-kinematics/prrr-reachability-study.webp",
+        "caption": "PRRR reachability heat map for varying L3 and L4 with L2 fixed at 0.5 m. The original red circle marks the selected L3 = 0.5 m, L4 = 0.2 m combination."
+      }
+    ],
+    "mediaTabLabel": "Study figures",
+    "mediaHeading": "Derivations, configurations & results",
+    "mediaIntro": "Selected original figures from the robotics report, presented with individual explanations. R and P denote revolute and prismatic joints. Select any image to enlarge; the plotted data, axes and legends are unchanged.",
+    "nextHeading": "Design takeaway",
+    "next": "More degrees of freedom provide more configuration choices, but the task should determine whether that flexibility is worth the added complexity. Obstacle-aware motion planning would be a useful extension for testing where the PRRR architecture’s extra freedom becomes valuable."
   }
 ];
