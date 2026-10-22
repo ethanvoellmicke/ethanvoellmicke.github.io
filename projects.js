@@ -1001,15 +1001,16 @@ window.PORTFOLIO_PROJECTS = [
     "mediaIntro": "The video documents the printed bridge under load. Original CAD, dimensioned sections, ANSYS plots and build photographs show the design progression. Select any figure to enlarge it.",
     "next": "The biggest improvement came from responding to observed failure, rather than simply adding material. Future iterations would plan manual supports earlier, explore more candidate geometries before printing, and remove additional material only after checking lateral stability and print quality.",
     "award": {
-      "title": "Lightest bridge to support 20 lbs in course history",
+      "title": "Lightest bridge in course history",
       "event": "Additive Manufacturing Processes",
-      "detail": "Additive Manufacturing Processes final project · record remains unbeaten",
+      "detail": "Designed through successive CAD, simulation and print iterations, the final bridge supported 20 lb at a mass of just 11.7 g. The course record remains unbeaten.",
       "src": "media/lightweight-bridge/bridge-design.webp",
       "caption": "CAD view of the lightweight bridge design used for the Additive Manufacturing Processes final project.",
-      "label": "COURSE HISTORY",
-      "ariaLabel": "Bridge course-history record",
-      "linkLabel": "View bridge design",
-      "linkAria": "View course-record bridge design"
+      "label": "COURSE RECORD",
+      "ariaLabel": "Bridge course record",
+      "linkLabel": "View final bridge design",
+      "linkAria": "View course-record bridge design",
+      "layout": "bridge-record"
     },
     "iterations": [
       {

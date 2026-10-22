@@ -82,4 +82,18 @@
 .upcoming-videos{margin-bottom:34px}.upcoming-videos>h3{margin-top:10px}.upcoming-videos>p{font-size:13px;margin-bottom:22px}.upcoming-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.upcoming-video-card{border:1px solid var(--line);border-radius:6px;background:var(--pale);padding:25px 20px;min-height:155px}.coming-soon-label{font-size:8px;letter-spacing:1.2px;font-weight:700;color:var(--green)}.upcoming-video-card h4{font-size:20px;font-weight:500;letter-spacing:-.4px;margin:20px 0 9px}.upcoming-video-card p{font-size:12px;line-height:1.6;margin:0}@media(max-width:650px){.upcoming-video-grid{grid-template-columns:1fr}.upcoming-video-card{min-height:0;padding:21px}.upcoming-video-card h4{margin-top:13px}}
 
 /* Let the bridge achievement read as a complete statement. */
-.project-award[aria-label="Bridge course-history record"]{grid-template-columns:1fr auto;gap:14px 24px}.project-award[aria-label="Bridge course-history record"] .award-rank{grid-column:1/-1;white-space:normal;font-size:25px;line-height:1.25;letter-spacing:-.6px}@media(max-width:750px){.project-award[aria-label="Bridge course-history record"]{grid-template-columns:1fr}.project-award[aria-label="Bridge course-history record"] .award-rank{font-size:23px}}
+
+
+/* Bridge record: context, achievement and test results in one panel. */
+.bridge-achievement{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px 32px;align-items:center;padding:28px;margin:0 0 26px;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:6px;background:var(--pale)}
+.bridge-achievement .eyebrow{font-size:9px;letter-spacing:1.5px;color:var(--green)}
+.bridge-achievement h3{font-size:25px;line-height:1.2;letter-spacing:-.6px;margin:10px 0 12px;color:var(--ink,#192c33);font-weight:500}
+.bridge-achievement p{font-size:13px;line-height:1.7;margin:0;max-width:590px}
+.bridge-achievement-course{display:block;font-size:11px;margin-top:12px;color:var(--muted,#627078)}
+.bridge-achievement-metrics{display:flex;gap:26px;margin:0;padding-left:28px;border-left:1px solid var(--line)}
+.bridge-achievement-metrics div{display:flex;flex-direction:column-reverse;gap:7px;min-width:94px}
+.bridge-achievement-metrics dt{font-size:10px;color:var(--muted,#627078);white-space:nowrap}
+.bridge-achievement-metrics dd{margin:0;color:var(--green);font-size:34px;line-height:1.1;letter-spacing:-1px;font-weight:500;white-space:nowrap}
+.bridge-achievement-metrics dd span{font-size:17px;letter-spacing:0}
+.bridge-achievement-link{grid-column:1/-1;justify-self:start;border:0;border-bottom:1px solid var(--green);background:none;padding:0 0 5px;font-size:11px;color:var(--green);font-weight:600}
+@media(max-width:750px){.bridge-achievement{grid-template-columns:1fr;padding:22px;gap:20px}.bridge-achievement h3{font-size:23px}.bridge-achievement-metrics{padding:19px 0 0;border-left:0;border-top:1px solid var(--line);gap:38px}.bridge-achievement-metrics dd{font-size:32px}}

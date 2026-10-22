@@ -58,6 +58,7 @@ function resultsHTML(p){
 function awardHTML(p){
  if(!p.award)return "";
  const a=p.award;
+ if(a.layout==="bridge-record")return '<aside class="bridge-achievement" aria-label="'+esc(a.ariaLabel)+'"><div class="bridge-achievement-copy"><span class="eyebrow">'+esc(a.label)+'</span><h3>'+esc(a.title)+'</h3><p>'+esc(a.detail)+'</p><span class="bridge-achievement-course">'+esc(a.event)+'</span></div><dl class="bridge-achievement-metrics"><div><dt>Final bridge mass</dt><dd>11.7 <span>g</span></dd></div><div><dt>Load supported</dt><dd>20 <span>lb</span></dd></div></dl><button class="bridge-achievement-link" '+imgAttrs(a.src,a.caption)+' aria-label="'+esc(a.linkAria)+'">'+esc(a.linkLabel)+' ↗</button></aside>';
  return '<aside class="project-award" aria-label="'+esc(a.ariaLabel||"Competition result")+'"><strong class="award-rank">'+esc(a.title)+'</strong><div class="award-copy"><span class="eyebrow">'+esc(a.label||"COMPETITION RESULT")+'</span><h3>'+esc(a.event)+'</h3><p>'+esc(a.detail)+'</p></div><button class="award-image-link" '+imgAttrs(a.src,a.caption)+' aria-label="'+esc(a.linkAria||"View second-place trophy")+'">'+esc(a.linkLabel||"View trophy")+' ↗</button></aside>';
 }
 function panelHTML(p,tab){
