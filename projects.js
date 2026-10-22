@@ -228,8 +228,8 @@ window.PORTFOLIO_PROJECTS = [
         "caption": "Transparent CAD view of the spring-loaded, bidirectional pressure-relief valve internals"
       },
       {
-        "src": "media/senior-design/valve-assembly-render.svg",
-        "caption": "Physical valve assembly, CNC-machined and assembled by our team."
+        "src": "media/senior-design/cnc-valve-assembly.jpg",
+        "caption": "Physical pressure-relief valve prototype, CNC-machined and assembled by our team, showing the aluminum valve body and plate mechanism."
       },
       {
         "src": "media/senior-design/showcase-poster.webp",
