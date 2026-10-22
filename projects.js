@@ -87,7 +87,7 @@ window.PORTFOLIO_PROJECTS = [
     ],
     "technicalNote": "The supplied firmware includes stand, crawl, and trot modes. Roll and pitch feedback are disabled during trot in the supplied controller. Gait tuning and physical testing are ongoing; no measured terrain or speed claims are implied.",
     "next": "Continue physical gait tuning and document stabilization response. An onboard camera and machine-learning-based perception are planned future work.",
-    "wiring": "assets/quadruped-wiring.svg",
+    "wiring": "assets/quadruped-wiring.svg?v=visio-20261022",
     "mediaHeading": "From CAD to the physical build",
     "mediaIntro": "The CAD assembly, physical build photograph and wiring schematic document the robot’s mechanical structure and electronics integration. Select an image to enlarge it.",
     "upcomingVideos": [
