@@ -184,14 +184,14 @@ window.PORTFOLIO_PROJECTS = [
       {
         "src": "media/robotic-arm/overall-movement.mp4",
         "poster": "media/robotic-arm/overall-poster.jpg",
-        "title": "Overall movement",
-        "caption": "The arm responds to hand-tracking input across its range of motion."
+        "title": "Wrist rotation",
+        "caption": "Wrist rotation is mapped to the robotic arm’s rotational motion."
       },
       {
         "src": "media/robotic-arm/wrist-rotation.mp4",
         "poster": "media/robotic-arm/wrist-poster.jpg",
-        "title": "Wrist rotation",
-        "caption": "Wrist rotation is mapped to the robotic arm’s rotational motion."
+        "title": "Overall movement",
+        "caption": "The arm responds to hand-tracking input across its range of motion."
       }
     ]
   },
