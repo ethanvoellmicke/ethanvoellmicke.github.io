@@ -1433,7 +1433,7 @@ window.PORTFOLIO_PROJECTS = [
       },
       {
         "title": "Equipment maintenance & repair",
-        "description": "Hands-on mechanical work with the engine bay open, documented in the photograph and short video.",
+        "description": "Engine-bay maintenance and a closer look at the component installation location.",
         "photos": [
           {
             "src": "media/construction-equipment/engine-bay-maintenance.jpg",
@@ -1444,11 +1444,11 @@ window.PORTFOLIO_PROJECTS = [
           {
             "src": "media/construction-equipment/equipment-repair.mp4",
             "poster": "media/construction-equipment/equipment-repair-poster.jpg",
-            "title": "Engine-bay repair work",
-            "caption": "A close view of hands-on work around the engine bay, including a removed component and the surrounding filters and connections."
+            "title": "Component installation location",
+            "caption": "A closer look inside the engine bay, showing where the replacement part will be installed."
           }
         ],
-        "videoHeading": "Equipment repair footage"
+        "videoHeading": "Inside the engine bay"
       }
     ]
   }
