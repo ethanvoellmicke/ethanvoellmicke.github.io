@@ -178,8 +178,7 @@ window.PORTFOLIO_PROJECTS = [
         "Joint calculations and servo commands translate the target into physical motion."
       ]
     ],
-    "next": "Add the original Python and Arduino source files, joint calibration details, and control-interface documentation.",
-    "technicalNote": "The demonstration videos show overall arm motion and wrist-driven rotation, alongside the physical build photograph and CAD assembly. Python and Arduino source files and detailed calibration documentation will be added.",
+    "technicalNote": "The original Python and Arduino source files were lost. Photos and demonstration videos document the completed build and its operation.",
     "videos": [
       {
         "src": "media/robotic-arm/overall-movement.mp4",
@@ -193,7 +192,8 @@ window.PORTFOLIO_PROJECTS = [
         "title": "Overall movement",
         "caption": "The arm responds to hand-tracking input across its range of motion."
       }
-    ]
+    ],
+    "technicalHeading": "Source files"
   },
   {
     "id": "senior-design",
