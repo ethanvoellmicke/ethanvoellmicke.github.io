@@ -1444,7 +1444,7 @@ window.PORTFOLIO_PROJECTS = [
           {
             "src": "media/construction-equipment/equipment-repair.mp4",
             "poster": "media/construction-equipment/equipment-repair-poster.jpg",
-            "title": "Component installation location",
+            "title": "Engine-bay repair work",
             "caption": "A closer look inside the engine bay, showing where the replacement part will be installed."
           }
         ],
