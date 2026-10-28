@@ -1346,7 +1346,7 @@ window.PORTFOLIO_PROJECTS = [
       }
     ],
     "meta": "Wenzel Inc. · May 2024 – Sep 2026 · Field experience",
-    "overviewHeading": "Practical engineering, on site and under the hood",
+    "overviewHeading": "Site management, equipment operation and repair",
     "overview": "As a Construction Manager at Wenzel Inc., I coordinated daily work, equipment use and on-site problem solving across construction and site-development jobs. Alongside managing the work, I operated and maintained heavy machinery, including CAT equipment, and carried out mechanical troubleshooting, preventive maintenance and major repairs such as engine-component replacement. That combination connected planning with the practical demands of getting a job done: organizing a crew, keeping equipment available and responding when mechanical problems interrupted the work. The photographs show finished walls and steps, concrete-removal work, engine-bay maintenance and my view while operating a loader.",
     "contributionHeading": "My responsibilities",
     "contributions": [
