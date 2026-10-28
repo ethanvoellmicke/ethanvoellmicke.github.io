@@ -770,6 +770,10 @@ window.PORTFOLIO_PROJECTS = [
     "video": null,
     "photos": [
       {
+        "src": "media/microneedle-actuator/steering-needle-system-concept.png",
+        "caption": "Annotated steering-needle concept showing independent pressure lines, pressure-controlled bending, vacuum-induced microbead jamming for stiffness control, an extension actuator and the central coring channel."
+      },
+      {
         "src": "media/microneedle-actuator/needle-transition-detail.webp",
         "caption": "Close view of the modeled needle transition and patterned actuator body, rendered in SOLIDWORKS Visualize."
       },
@@ -846,8 +850,8 @@ window.PORTFOLIO_PROJECTS = [
       ]
     ],
     "technicalNote": "The documentation focuses on actuator concepts, patterned geometry, and material-modeling investigations. The curved and detail images are design renders made in SOLIDWORKS Visualize; the straight configuration is a CAD view. Microprinting and prototype fabrication were explored as research directions.",
-    "mediaHeading": "Needle concept & patterned-body studies",
-    "mediaIntro": "CAD views and renders of the needle/actuator concept and related patterned-body studies. Detail views show the dot rows and local geometry; overall views show straight and curved configurations. Dot density was explored as a design variable. Select an image to enlarge it.",
+    "mediaHeading": "Steering concept & actuator design studies",
+    "mediaIntro": "The annotated system concept shows how pressure-driven steering, stiffness control and extension could work together around a coring needle. CAD views and SOLIDWORKS Visualize renders document the patterned-body studies, including dot density, local geometry and straight and curved configurations. Select an image to enlarge it.",
     "next": "Add fabrication documentation and measured pressure–deformation data when available.",
     "mediaTabLabel": "Design gallery"
   },
