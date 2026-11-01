@@ -27,6 +27,18 @@ window.PORTFOLIO_PROJECTS = [
       {
         "src": "media/quadruped/quadruped-build-photo.jpg",
         "caption": "Physical 12-DOF quadruped build, showing the 3D-printed structure, servo wiring and onboard battery alongside the laptop control and serial-monitor setup."
+      },
+      {
+        "src": "media/quadruped/current-body-assembly.jpg",
+        "caption": "Assembling the current body version, with the 3D-printed chassis, servo-mounted leg parts and power-distribution wiring laid out on the workbench."
+      },
+      {
+        "src": "media/quadruped/wiring-soldering.jpg",
+        "caption": "Preparing and soldering the robot’s wiring, with branched wire connections and ring terminals laid out before installation."
+      },
+      {
+        "src": "media/quadruped/power-wiring-assembly.jpg",
+        "caption": "Building the power-distribution wiring around the positive bus bar, main switch and inline fuse, with insulated connections prepared for installation in the robot."
       }
     ],
     "meta": "12 joints · Custom hardware · IMU feedback",
@@ -88,8 +100,8 @@ window.PORTFOLIO_PROJECTS = [
     "technicalNote": "The supplied firmware includes stand, crawl, and trot modes. Roll and pitch feedback are disabled during trot in the supplied controller. Gait tuning and physical testing are ongoing; no measured terrain or speed claims are implied.",
     "next": "Continue physical gait tuning and document stabilization response. An onboard camera and machine-learning-based perception are planned future work.",
     "wiring": "assets/quadruped-wiring.svg?v=visio-20261022",
-    "mediaHeading": "From CAD to the physical build",
-    "mediaIntro": "The CAD assembly, physical build photograph and wiring schematic document the robot’s mechanical structure and electronics integration. Select an image to enlarge it.",
+    "mediaHeading": "Body assembly, wiring & physical build",
+    "mediaIntro": "The CAD assembly and build photographs show the robot’s structure, assembly of the current body, and the wiring I prepared and soldered for power distribution. The electrical schematic documents the power and control connections. Select an image to enlarge it.",
     "upcomingVideos": [
       {
         "title": "Crawl gait",
