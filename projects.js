@@ -877,8 +877,98 @@ window.PORTFOLIO_PROJECTS = [
     "mediaTabLabel": "Design gallery"
   },
   {
-    "id": "lightweight-bridge",
+    "id": "inverted-pendulum",
     "number": "08",
+    "title": "Inverted Pendulum",
+    "category": "Feedback control / embedded systems",
+    "filters": [
+      "robotics",
+      "embedded"
+    ],
+    "summary": "A motor-driven inverted pendulum using angle feedback to balance upright.",
+    "description": "A physical balancing project combining an Arduino controller, a brushless motor and encoder feedback to stabilize an inverted pendulum.",
+    "tags": [
+      "Arduino",
+      "C++",
+      "Feedback control",
+      "BLDC motor",
+      "SimpleFOC",
+      "Encoders"
+    ],
+    "image": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
+    "imageCaption": "The physical inverted pendulum balancing setup during testing.",
+    "repo": null,
+    "video": null,
+    "photos": [],
+    "meta": "Arduino · Encoder feedback · Closed-loop balancing",
+    "overviewHeading": "Building and tuning the balancing system",
+    "overview": "I assembled and tuned an inverted pendulum system to keep an unstable mechanism upright using motor corrections. An Arduino reads the pendulum angle and commands a brushless motor through its driver. The project involved integrating the motor and sensors, calibrating the angle references, adjusting the feedback gains and testing the response on the physical setup.",
+    "contributionHeading": "What I worked on",
+    "contributions": [
+      "Integrated an Arduino, BLDC motor driver and separate motor and pendulum angle sensors.",
+      "Calibrated the pendulum’s upright reference and motor position feedback.",
+      "Implemented and tuned the balancing controller, using proportional and derivative feedback to adjust the response.",
+      "Used serial commands and telemetry to change gains, inspect readings and troubleshoot wiring and sensor issues."
+    ],
+    "specs": [
+      [
+        "Controller",
+        "Arduino Uno"
+      ],
+      [
+        "Motor control",
+        "BLDC motor · SimpleFOC"
+      ],
+      [
+        "Feedback",
+        "Motor encoder + pendulum angle sensor"
+      ],
+      [
+        "Control task",
+        "Balance near the upright position"
+      ],
+      [
+        "Tuning interface",
+        "Serial commands and telemetry"
+      ]
+    ],
+    "processHeading": "How the balancing control works",
+    "process": [
+      [
+        "Measure the angles",
+        "Read the pendulum angle and motor position, using calibrated references for the upright position and motor center."
+      ],
+      [
+        "Calculate the correction",
+        "Use the pendulum’s angle error and rate of motion to calculate a corrective motor command."
+      ],
+      [
+        "Drive the motor",
+        "Apply the command through the BLDC driver, with an output limit while tuning the controller."
+      ],
+      [
+        "Test and tune",
+        "Adjust feedback gains through the serial interface and observe the physical balancing response."
+      ]
+    ],
+    "technicalHeading": "Control tuning",
+    "technicalNote": "Proportional feedback provides a restoring response to the pendulum’s angle error, while derivative feedback adds damping. I tuned the gains on the physical mechanism and used telemetry to check sensor readings and motor response.",
+    "videoHeading": "Balancing demonstration",
+    "videos": [
+      {
+        "src": "media/inverted-pendulum/inverted-pendulum-demo.mp4",
+        "poster": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
+        "title": "Inverted pendulum balancing",
+        "caption": "The physical pendulum balancing near its upright position during a controller test."
+      }
+    ],
+    "mediaHeading": "Physical balancing setup",
+    "mediaIntro": "The video shows the inverted pendulum in operation, with the Arduino development environment visible behind the hardware.",
+    "mediaTabLabel": "Demo & hardware"
+  },
+  {
+    "id": "lightweight-bridge",
+    "number": "09",
     "title": "Lightweight 3D-Printed Bridge",
     "category": "Additive manufacturing / class project",
     "filters": [
@@ -1148,7 +1238,7 @@ window.PORTFOLIO_PROJECTS = [
   },
   {
     "id": "robot-kinematics",
-    "number": "09",
+    "number": "10",
     "title": "Robot Kinematics & Singularity Analysis",
     "category": "Robotics / MATLAB analysis",
     "filters": [
@@ -1333,96 +1423,6 @@ window.PORTFOLIO_PROJECTS = [
     "mediaIntro": "Selected original figures from the robotics report, presented with individual explanations. R and P denote revolute and prismatic joints. Select any image to enlarge; the plotted data, axes and legends are unchanged.",
     "nextHeading": "Design takeaway",
     "next": "More degrees of freedom provide more configuration choices, but the task should determine whether that flexibility is worth the added complexity. Obstacle-aware motion planning would be a useful extension for testing where the PRRR architecture’s extra freedom becomes valuable."
-  },
-  {
-    "id": "inverted-pendulum",
-    "number": "10",
-    "title": "Inverted Pendulum",
-    "category": "Feedback control / embedded systems",
-    "filters": [
-      "robotics",
-      "embedded"
-    ],
-    "summary": "A motor-driven inverted pendulum using angle feedback to balance upright.",
-    "description": "A physical balancing project combining an Arduino controller, a brushless motor and encoder feedback to stabilize an inverted pendulum.",
-    "tags": [
-      "Arduino",
-      "C++",
-      "Feedback control",
-      "BLDC motor",
-      "SimpleFOC",
-      "Encoders"
-    ],
-    "image": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
-    "imageCaption": "The physical inverted pendulum balancing setup during testing.",
-    "repo": null,
-    "video": null,
-    "photos": [],
-    "meta": "Arduino · Encoder feedback · Closed-loop balancing",
-    "overviewHeading": "Building and tuning the balancing system",
-    "overview": "I assembled and tuned an inverted pendulum system to keep an unstable mechanism upright using motor corrections. An Arduino reads the pendulum angle and commands a brushless motor through its driver. The project involved integrating the motor and sensors, calibrating the angle references, adjusting the feedback gains and testing the response on the physical setup.",
-    "contributionHeading": "What I worked on",
-    "contributions": [
-      "Integrated an Arduino, BLDC motor driver and separate motor and pendulum angle sensors.",
-      "Calibrated the pendulum’s upright reference and motor position feedback.",
-      "Implemented and tuned the balancing controller, using proportional and derivative feedback to adjust the response.",
-      "Used serial commands and telemetry to change gains, inspect readings and troubleshoot wiring and sensor issues."
-    ],
-    "specs": [
-      [
-        "Controller",
-        "Arduino Uno"
-      ],
-      [
-        "Motor control",
-        "BLDC motor · SimpleFOC"
-      ],
-      [
-        "Feedback",
-        "Motor encoder + pendulum angle sensor"
-      ],
-      [
-        "Control task",
-        "Balance near the upright position"
-      ],
-      [
-        "Tuning interface",
-        "Serial commands and telemetry"
-      ]
-    ],
-    "processHeading": "How the balancing control works",
-    "process": [
-      [
-        "Measure the angles",
-        "Read the pendulum angle and motor position, using calibrated references for the upright position and motor center."
-      ],
-      [
-        "Calculate the correction",
-        "Use the pendulum’s angle error and rate of motion to calculate a corrective motor command."
-      ],
-      [
-        "Drive the motor",
-        "Apply the command through the BLDC driver, with an output limit while tuning the controller."
-      ],
-      [
-        "Test and tune",
-        "Adjust feedback gains through the serial interface and observe the physical balancing response."
-      ]
-    ],
-    "technicalHeading": "Control tuning",
-    "technicalNote": "Proportional feedback provides a restoring response to the pendulum’s angle error, while derivative feedback adds damping. I tuned the gains on the physical mechanism and used telemetry to check sensor readings and motor response.",
-    "videoHeading": "Balancing demonstration",
-    "videos": [
-      {
-        "src": "media/inverted-pendulum/inverted-pendulum-demo.mp4",
-        "poster": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
-        "title": "Inverted pendulum balancing",
-        "caption": "The physical pendulum balancing near its upright position during a controller test."
-      }
-    ],
-    "mediaHeading": "Physical balancing setup",
-    "mediaIntro": "The video shows the inverted pendulum in operation, with the Arduino development environment visible behind the hardware.",
-    "mediaTabLabel": "Demo & hardware"
   },
   {
     "id": "construction-equipment",
