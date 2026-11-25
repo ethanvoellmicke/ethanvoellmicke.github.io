@@ -880,79 +880,96 @@ window.PORTFOLIO_PROJECTS = [
     "id": "inverted-pendulum",
     "number": "08",
     "title": "Inverted Pendulum",
-    "category": "Feedback control / embedded systems",
+    "category": "Feedback Control final project / embedded systems",
     "filters": [
       "robotics",
       "embedded"
     ],
-    "summary": "A motor-driven inverted pendulum using angle feedback to balance upright.",
-    "description": "A physical balancing project combining an Arduino controller, a brushless motor and encoder feedback to stabilize an inverted pendulum.",
+    "summary": "An independently completed Feedback Control final project: balancing an inverted pendulum with sensor feedback and a BLDC motor.",
+    "description": "My independently completed Feedback Control final project, implementing and tuning a four-state feedback controller on a physical Arduino-based inverted pendulum.",
     "tags": [
-      "Arduino",
-      "C++",
       "Feedback control",
-      "BLDC motor",
+      "State feedback",
+      "Arduino / C++",
       "SimpleFOC",
-      "Encoders"
+      "BLDC motor",
+      "Sensor calibration"
     ],
     "image": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
     "imageCaption": "The physical inverted pendulum balancing setup during testing.",
     "repo": null,
     "video": null,
     "photos": [],
-    "meta": "Arduino · Encoder feedback · Closed-loop balancing",
-    "overviewHeading": "Building and tuning the balancing system",
-    "overview": "I assembled and tuned an inverted pendulum system to keep an unstable mechanism upright using motor corrections. An Arduino reads the pendulum angle and commands a brushless motor through its driver. The project involved integrating the motor and sensors, calibrating the angle references, adjusting the feedback gains and testing the response on the physical setup.",
-    "contributionHeading": "What I worked on",
+    "meta": "Individual final project · Four-state feedback · Arduino",
+    "overviewHeading": "Feedback Control final project",
+    "overview": "For my Feedback Control final project, I independently integrated and tuned a motor-driven inverted pendulum to balance near its unstable upright position. I used an Arduino Uno, a SimpleFOC motor driver and two angle sensors to close the feedback loop. My work included calibrating the sensors, implementing the balancing logic, adjusting the control gains and testing the hardware. The controller combines pendulum angle and angular velocity with motor position and velocity feedback, so I could investigate both the balancing response and the motion of the motor itself.",
+    "contributionHeading": "My work",
     "contributions": [
-      "Integrated an Arduino, BLDC motor driver and separate motor and pendulum angle sensors.",
-      "Calibrated the pendulum’s upright reference and motor position feedback.",
-      "Implemented and tuned the balancing controller, using proportional and derivative feedback to adjust the response.",
-      "Used serial commands and telemetry to change gains, inspect readings and troubleshoot wiring and sensor issues."
+      "Independently completed the final project, including hardware integration, sensor calibration, controller implementation and physical testing.",
+      "Implemented a four-state feedback law using pendulum angle, estimated pendulum angular velocity, motor position error and motor velocity.",
+      "Added filtered velocity estimates, motor-position and output deadbands, and a quiet-hold condition near upright.",
+      "Built a serial interface to adjust all four gains and the voltage limit while disarmed, capture the motor center, and inspect live telemetry.",
+      "Tested and tuned the physical response while troubleshooting sensor wiring, feedback direction and motor behavior."
     ],
     "specs": [
       [
+        "Project",
+        "Individual Feedback Control final"
+      ],
+      [
         "Controller",
-        "Arduino Uno"
+        "Arduino Uno / C++"
       ],
       [
         "Motor control",
-        "BLDC motor · SimpleFOC"
+        "7-pole-pair BLDC · SimpleFOC"
       ],
       [
-        "Feedback",
-        "Motor encoder + pendulum angle sensor"
+        "Motor feedback",
+        "AS5600 magnetic encoder · I²C"
       ],
       [
-        "Control task",
-        "Balance near the upright position"
+        "Pendulum feedback",
+        "Analog angle sensor · A0"
+      ],
+      [
+        "Feedback law",
+        "Pendulum angle/rate + motor position/rate"
+      ],
+      [
+        "Control update",
+        "2 ms minimum interval in the sketch"
       ],
       [
         "Tuning interface",
-        "Serial commands and telemetry"
+        "Serial Monitor · 115200 baud"
       ]
     ],
-    "processHeading": "How the balancing control works",
+    "processHeading": "How the feedback loop works",
     "process": [
       [
-        "Measure the angles",
-        "Read the pendulum angle and motor position, using calibrated references for the upright position and motor center."
+        "Calibrate and measure",
+        "Convert the pendulum sensor’s 10-bit ADC reading to an angle relative to upright. Read motor angle and velocity through the AS5600 encoder and SimpleFOC."
       ],
       [
-        "Calculate the correction",
-        "Use the pendulum’s angle error and rate of motion to calculate a corrective motor command."
+        "Estimate motion",
+        "Estimate pendulum angular velocity from the change in angle over elapsed time, handling angle wraparound. Low-pass filters smooth the pendulum and motor velocity signals."
       ],
       [
-        "Drive the motor",
-        "Apply the command through the BLDC driver, with an output limit while tuning the controller."
+        "Calculate four-state feedback",
+        "Combine the four feedback terms: Kp × pendulum angle, Kd × pendulum angular velocity, motor-position gain × center error, and motor-velocity gain × motor speed."
       ],
       [
-        "Test and tune",
-        "Adjust feedback gains through the serial interface and observe the physical balancing response."
+        "Command the motor",
+        "Apply deadbands and a near-upright quiet-hold condition, then clamp the voltage command. SimpleFOC runs field-oriented motor control using voltage-based torque commands."
+      ],
+      [
+        "Arm, test and tune",
+        "Start disarmed and arm only within 10° of upright with a nonzero gain. The controller disarms beyond 20°. Use serial commands to stop, adjust gains while disarmed and inspect telemetry."
       ]
     ],
-    "technicalHeading": "Control tuning",
-    "technicalNote": "Proportional feedback provides a restoring response to the pendulum’s angle error, while derivative feedback adds damping. I tuned the gains on the physical mechanism and used telemetry to check sensor readings and motor response.",
+    "technicalHeading": "Feedback and tuning",
+    "technicalNote": "The sketch implements tunable four-state feedback rather than fixed balancing gains. Pendulum-angle feedback supplies the restoring response, and angular-velocity feedback shapes damping; the motor-position and motor-velocity terms let me adjust how the base moves. I used serial commands and telemetry to compare the physical response while changing the gains. The sketch also includes filtered velocity estimates, output limiting, deadbands and an upright-angle check before arming.",
     "videoHeading": "Balancing demonstration",
     "videos": [
       {
@@ -964,7 +981,13 @@ window.PORTFOLIO_PROJECTS = [
     ],
     "mediaHeading": "Physical balancing setup",
     "mediaIntro": "The video shows the inverted pendulum in operation, with the Arduino development environment visible behind the hardware.",
-    "mediaTabLabel": "Demo & hardware"
+    "mediaTabLabel": "Demo & hardware",
+    "resources": [
+      {
+        "label": "Arduino balancing sketch (.ino)",
+        "url": "https://github.com/ethanvoellmicke/ethanvoellmicke.github.io/blob/main/code/inverted-pendulum/InvertedPendulumBalancing/InvertedPendulumBalancing.ino"
+      }
+    ]
   },
   {
     "id": "lightweight-bridge",
