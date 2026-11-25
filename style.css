@@ -97,3 +97,6 @@
 .bridge-achievement-metrics dd span{font-size:17px;letter-spacing:0}
 .bridge-achievement-link{grid-column:1/-1;justify-self:start;border:0;border-bottom:1px solid var(--green);background:none;padding:0 0 5px;font-size:11px;color:var(--green);font-weight:600}
 @media(max-width:750px){.bridge-achievement{grid-template-columns:1fr;padding:22px;gap:20px}.bridge-achievement h3{font-size:23px}.bridge-achievement-metrics{padding:19px 0 0;border-left:0;border-top:1px solid var(--line);gap:38px}.bridge-achievement-metrics dd{font-size:32px}}
+
+/* Preserve the full pendulum and base on the project cover. */
+.project-card[data-project="inverted-pendulum"] .card-art{background:#e4ece8}.project-card[data-project="inverted-pendulum"] .card-art img{object-fit:contain;object-position:center}.project-card[data-project="inverted-pendulum"] .card-no,.project-card[data-project="inverted-pendulum"] .card-arrow{background:#f7f8f5e8;border-radius:3px;padding:3px 5px}

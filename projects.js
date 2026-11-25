@@ -101,7 +101,7 @@ window.PORTFOLIO_PROJECTS = [
     "next": "Continue physical gait tuning and document stabilization response. An onboard camera and machine-learning-based perception are planned future work.",
     "wiring": "assets/quadruped-wiring.svg?v=visio-20261022",
     "mediaHeading": "Body assembly, wiring & physical build",
-    "mediaIntro": "The CAD assembly and build photographs show the robot’s structure, assembly of the current body, and the wiring I prepared and soldered for power distribution. The electrical schematic documents the power and control connections. Select an image to enlarge it.",
+    "mediaIntro": "The standing demonstration shows IMU-based body corrections on the physical robot. CAD and build photographs document the structure, current body assembly and soldered power-distribution wiring. Select an image to enlarge it.",
     "upcomingVideos": [
       {
         "title": "Crawl gait",
@@ -115,7 +115,16 @@ window.PORTFOLIO_PROJECTS = [
         "title": "Crab walking",
         "description": "Sideways walking demonstration."
       }
-    ]
+    ],
+    "videos": [
+      {
+        "src": "media/quadruped/standing-imu-stabilization.mp4",
+        "poster": "media/quadruped/standing-imu-stabilization-poster.jpg",
+        "title": "Standing IMU stabilization",
+        "caption": "Testing body stabilization in the standing position. IMU roll and pitch feedback drives corrective leg movements as I tilt the robot’s body."
+      }
+    ],
+    "videoHeading": "Standing stabilization"
   },
   {
     "id": "robotic-arm",
@@ -1326,8 +1335,98 @@ window.PORTFOLIO_PROJECTS = [
     "next": "More degrees of freedom provide more configuration choices, but the task should determine whether that flexibility is worth the added complexity. Obstacle-aware motion planning would be a useful extension for testing where the PRRR architecture’s extra freedom becomes valuable."
   },
   {
-    "id": "construction-equipment",
+    "id": "inverted-pendulum",
     "number": "10",
+    "title": "Inverted Pendulum",
+    "category": "Feedback control / embedded systems",
+    "filters": [
+      "robotics",
+      "embedded"
+    ],
+    "summary": "A motor-driven inverted pendulum using angle feedback to balance upright.",
+    "description": "A physical balancing project combining an Arduino controller, a brushless motor and encoder feedback to stabilize an inverted pendulum.",
+    "tags": [
+      "Arduino",
+      "C++",
+      "Feedback control",
+      "BLDC motor",
+      "SimpleFOC",
+      "Encoders"
+    ],
+    "image": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
+    "imageCaption": "The physical inverted pendulum balancing setup during testing.",
+    "repo": null,
+    "video": null,
+    "photos": [],
+    "meta": "Arduino · Encoder feedback · Closed-loop balancing",
+    "overviewHeading": "Building and tuning the balancing system",
+    "overview": "I assembled and tuned an inverted pendulum system to keep an unstable mechanism upright using motor corrections. An Arduino reads the pendulum angle and commands a brushless motor through its driver. The project involved integrating the motor and sensors, calibrating the angle references, adjusting the feedback gains and testing the response on the physical setup.",
+    "contributionHeading": "What I worked on",
+    "contributions": [
+      "Integrated an Arduino, BLDC motor driver and separate motor and pendulum angle sensors.",
+      "Calibrated the pendulum’s upright reference and motor position feedback.",
+      "Implemented and tuned the balancing controller, using proportional and derivative feedback to adjust the response.",
+      "Used serial commands and telemetry to change gains, inspect readings and troubleshoot wiring and sensor issues."
+    ],
+    "specs": [
+      [
+        "Controller",
+        "Arduino Uno"
+      ],
+      [
+        "Motor control",
+        "BLDC motor · SimpleFOC"
+      ],
+      [
+        "Feedback",
+        "Motor encoder + pendulum angle sensor"
+      ],
+      [
+        "Control task",
+        "Balance near the upright position"
+      ],
+      [
+        "Tuning interface",
+        "Serial commands and telemetry"
+      ]
+    ],
+    "processHeading": "How the balancing control works",
+    "process": [
+      [
+        "Measure the angles",
+        "Read the pendulum angle and motor position, using calibrated references for the upright position and motor center."
+      ],
+      [
+        "Calculate the correction",
+        "Use the pendulum’s angle error and rate of motion to calculate a corrective motor command."
+      ],
+      [
+        "Drive the motor",
+        "Apply the command through the BLDC driver, with an output limit while tuning the controller."
+      ],
+      [
+        "Test and tune",
+        "Adjust feedback gains through the serial interface and observe the physical balancing response."
+      ]
+    ],
+    "technicalHeading": "Control tuning",
+    "technicalNote": "Proportional feedback provides a restoring response to the pendulum’s angle error, while derivative feedback adds damping. I tuned the gains on the physical mechanism and used telemetry to check sensor readings and motor response.",
+    "videoHeading": "Balancing demonstration",
+    "videos": [
+      {
+        "src": "media/inverted-pendulum/inverted-pendulum-demo.mp4",
+        "poster": "media/inverted-pendulum/inverted-pendulum-poster.jpg",
+        "title": "Inverted pendulum balancing",
+        "caption": "The physical pendulum balancing near its upright position during a controller test."
+      }
+    ],
+    "mediaHeading": "Physical balancing setup",
+    "mediaIntro": "The video shows the inverted pendulum in operation, with the Arduino development environment visible behind the hardware.",
+    "mediaTabLabel": "Demo & hardware"
+  },
+  {
+    "id": "construction-equipment",
+    "number": "11",
     "title": "Construction Management & Equipment Repair",
     "category": "Work experience / construction & equipment",
     "filters": [
